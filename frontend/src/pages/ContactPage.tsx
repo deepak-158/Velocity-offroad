@@ -8,7 +8,8 @@ const ContactPage: React.FC = () => {
     email: '',
     phone: '',
     subject: '',
-    message: ''
+    message: '',
+    media: null as File | null
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
@@ -46,43 +47,68 @@ const ContactPage: React.FC = () => {
     setSubmitStatus({ type: null, message: '' });
 
     try {
-      // Encode form data as URL-encoded string for Netlify
-      const encode = (data: Record<string, string>) => {
-        return Object.keys(data)
-          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-          .join("&");
-      };
+      let response;
       
-      // Prepare form data
-      const formData = {
-        "form-name": "contact",
-        name: formState.name,
-        email: formState.email,
-        phone: formState.phone,
-        subject: formState.subject,
-        message: formState.message
-      };
-      
-      // Submit to Netlify
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode(formData)
-      });
+      if (formState.media) {
+        // Use FormData for file uploads
+        const formData = new FormData();
+        formData.append("form-name", "contact");
+        formData.append("name", formState.name);
+        formData.append("email", formState.email);
+        formData.append("phone", formState.phone);
+        formData.append("subject", formState.subject);
+        formData.append("message", formState.message);
+        formData.append("media", formState.media);
+        
+        response = await fetch("/", {
+          method: "POST",
+          body: formData
+        });
+      } else {
+        // Use URL encoding for text-only submissions
+        const encode = (data: Record<string, string>) => {
+          return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+        };
+        
+        const textData = {
+          "form-name": "contact",
+          name: formState.name,
+          email: formState.email,
+          phone: formState.phone,
+          subject: formState.subject,
+          message: formState.message
+        };
+        
+        response = await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode(textData)
+        });
+      }
 
       if (response.ok) {
         // Show success message
         setSubmitStatus({
           type: 'success',
           message: 'Thank you for your message! We will get back to you soon.'
-        });        // Reset form
+        });        
+        // Reset form
         setFormState({
           name: '',
           email: '',
           phone: '',
           subject: '',
-          message: ''
+          message: '',
+          media: null
         });
+        
+        // Reset file input
+        const fileInput = document.querySelector('input[type="file"]') as HTMLInputElement;
+        if (fileInput) {
+          fileInput.value = '';
+        }
       } else {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -95,8 +121,7 @@ const ContactPage: React.FC = () => {
     } finally {
       setIsSubmitting(false);
     }
-  };
-  const handleInputChange = (
+  };const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
@@ -104,6 +129,15 @@ const ContactPage: React.FC = () => {
       ...prev,
       [name]: value
     }));
+  };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setFormState(prev => ({
+        ...prev,
+        media: e.target.files![0]
+      }));
+    }
   };
 
   return (
@@ -475,6 +509,43 @@ const ContactPage: React.FC = () => {
                       resize: 'vertical'
                     }}
                   />                </div>
+
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <label
+                    htmlFor="media"
+                    style={{
+                      display: 'block',
+                      marginBottom: '0.5rem',
+                      color: '#374151',
+                      fontSize: '0.875rem',
+                      fontWeight: '500'
+                    }}
+                  >
+                    Media Upload (Optional)
+                  </label>
+                  <input
+                    type="file"
+                    id="media"
+                    name="media"
+                    accept="image/*,video/*,.pdf,.doc,.docx"
+                    onChange={handleFileChange}
+                    style={{
+                      width: '100%',
+                      padding: '0.75rem',
+                      borderRadius: '0.375rem',
+                      border: '1px solid #d1d5db',
+                      fontSize: '1rem',
+                      backgroundColor: 'white'
+                    }}
+                  />
+                  <p style={{
+                    fontSize: '0.75rem',
+                    color: '#6b7280',
+                    marginTop: '0.25rem'
+                  }}>
+                    {formState.media ? `Selected: ${formState.media.name}` : 'Supported: Images, Videos, PDF, Word documents (Max 10MB)'}
+                  </p>
+                </div>
 
                 <button
                   type="submit"
