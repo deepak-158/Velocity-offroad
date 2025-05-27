@@ -3,14 +3,12 @@ import Layout from '../components/layout/Layout';
 import Hero from '../components/common/Hero';
 
 const ContactPage: React.FC = () => {
-  const contactFormRef = useRef<HTMLDivElement>(null);
-  const [formState, setFormState] = useState({
+  const contactFormRef = useRef<HTMLDivElement>(null);  const [formState, setFormState] = useState({
     name: '',
     email: '',
     phone: '',
     subject: '',
-    message: '',
-    image: null as File | null
+    message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
@@ -42,23 +40,34 @@ const ContactPage: React.FC = () => {
         heroBtn.removeEventListener('click', clickHandler);
       };
     }
-  }, []);
-  const handleSubmit = async (e: React.FormEvent) => {
+  }, []);  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: '' });
 
     try {
-      // Get the form element
-      const form = e.target as HTMLFormElement;
+      // Encode form data as URL-encoded string for Netlify
+      const encode = (data: Record<string, string>) => {
+        return Object.keys(data)
+          .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+          .join("&");
+      };
       
-      // Create FormData object
-      const formData = new FormData(form);
+      // Prepare form data
+      const formData = {
+        "form-name": "contact",
+        name: formState.name,
+        email: formState.email,
+        phone: formState.phone,
+        subject: formState.subject,
+        message: formState.message
+      };
       
       // Submit to Netlify
-      const response = await fetch('/', {
-        method: 'POST',
-        body: formData
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode(formData)
       });
 
       if (response.ok) {
@@ -66,25 +75,16 @@ const ContactPage: React.FC = () => {
         setSubmitStatus({
           type: 'success',
           message: 'Thank you for your message! We will get back to you soon.'
-        });
-
-        // Reset form
+        });        // Reset form
         setFormState({
           name: '',
           email: '',
           phone: '',
           subject: '',
-          message: '',
-          image: null
+          message: ''
         });
-
-        // Reset file input
-        const fileInput = form.querySelector('input[type="file"]') as HTMLInputElement;
-        if (fileInput) {
-          fileInput.value = '';
-        }
       } else {
-        throw new Error('Form submission failed');
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
     } catch (error) {
       console.error('Form submission error:', error);
@@ -96,7 +96,6 @@ const ContactPage: React.FC = () => {
       setIsSubmitting(false);
     }
   };
-
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -105,15 +104,6 @@ const ContactPage: React.FC = () => {
       ...prev,
       [name]: value
     }));
-  };
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setFormState(prev => ({
-        ...prev,
-        image: e.target.files![0]
-      }));
-    }
   };
 
   return (
@@ -300,13 +290,11 @@ const ContactPage: React.FC = () => {
                 marginBottom: '1.5rem'
               }}>
                 Fill out the form below and we'll get back to you as soon as possible.
-              </p>
-                <form
+              </p>              <form
                 name="contact"
                 method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                encType="multipart/form-data"
                 onSubmit={handleSubmit}
                 style={{
                   backgroundColor: 'white',
@@ -486,42 +474,7 @@ const ContactPage: React.FC = () => {
                       fontSize: '1rem',
                       resize: 'vertical'
                     }}
-                  />
-                </div>
-
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <label
-                    htmlFor="image"
-                    style={{
-                      display: 'block',
-                      marginBottom: '0.5rem',
-                      color: '#374151',
-                      fontSize: '0.875rem',
-                      fontWeight: '500'
-                    }}
-                  >
-                    Attach Image
-                  </label>
-                  <input
-                    type="file"
-                    id="file-upload"
-                    name="file-upload"
-                    accept="image/*"
-                    onChange={handleFileChange}
-                    style={{
-                      width: '100%',
-                      padding: '0.5rem 0',
-                      fontSize: '1rem'
-                    }}
-                  />
-                  <p style={{
-                    fontSize: '0.75rem',
-                    color: '#6b7280',
-                    marginTop: '0.25rem'
-                  }}>
-                    Supported formats: JPG, PNG, GIF (max 5MB)
-                  </p>
-                </div>
+                  />                </div>
 
                 <button
                   type="submit"
