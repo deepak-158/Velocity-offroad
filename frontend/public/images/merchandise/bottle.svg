@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bottleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e0e0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f5f5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d0d0d0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff4500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="capGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="reflectionGradient" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f8f9fa"/>
+  
+  <!-- Bottle Body -->
+  <ellipse cx="200" cy="280" rx="50" ry="120" fill="url(#bottleGradient)" stroke="#bbb" stroke-width="2"/>
+  
+  <!-- Bottle Neck -->
+  <rect x="180" y="120" width="40" height="60" rx="5" fill="url(#bottleGradient)" stroke="#bbb" stroke-width="2"/>
+  
+  <!-- Bottle Cap -->
+  <rect x="175" y="100" width="50" height="25" rx="8" fill="url(#capGradient)" stroke="#000" stroke-width="2"/>
+  
+  <!-- Cap details -->
+  <rect x="180" y="105" width="40" height="3" fill="#555"/>
+  <rect x="180" y="110" width="40" height="3" fill="#555"/>
+  <rect x="180" y="115" width="40" height="3" fill="#555"/>
+  
+  <!-- Spout -->
+  <rect x="190" y="95" width="20" height="8" rx="10" fill="#333" stroke="#111" stroke-width="1"/>
+  
+  <!-- VELOCITY Logo -->
+  <g transform="translate(200, 220)">
+    <!-- Logo Circle -->
+    <circle cx="0" cy="0" r="30" fill="url(#logoGradient)" stroke="#fff" stroke-width="2"/>
+    
+    <!-- V Letter -->
+    <path d="M-15 -12 L-6 12 L0 0 L6 12 L15 -12 L9 -12 L3 6 L0 -3 L-3 6 L-9 -12 Z" fill="white" stroke="#333" stroke-width="0.5"/>
+    
+    <!-- Speed lines -->
+    <path d="M-21 -6 L-15 -6 M-21 0 L-15 0 M-21 6 L-15 6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M15 -6 L21 -6 M15 0 L21 0 M15 6 L21 6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- VELOCITY Text -->
+  <text x="200" y="300" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="14" font-weight="bold" fill="url(#logoGradient)">VELOCITY</text>
+  <text x="200" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">OFFROAD</text>
+  
+  <!-- Bottle specifications -->
+  <text x="200" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#888">750ml | Stainless Steel</text>
+  <text x="200" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#888">Double Wall Insulated</text>
+  
+  <!-- Water level indicator -->
+  <rect x="160" y="200" width="80" height="120" rx="25" fill="rgba(173, 216, 230, 0.3)" stroke="none"/>
+  
+  <!-- Reflection/shine -->
+  <ellipse cx="180" cy="200" rx="15" ry="60" fill="url(#reflectionGradient)"/>
+  
+  <!-- Handle/grip texture -->
+  <pattern id="gripPattern" patternUnits="userSpaceOnUse" width="4" height="4">
+    <circle cx="2" cy="2" r="0.5" fill="#ccc" opacity="0.5"/>
+  </pattern>
+  <rect x="170" y="250" width="60" height="80" rx="25" fill="url(#gripPattern)"/>
+  
+  <!-- Carabiner clip -->
+  <circle cx="175" cy="130" r="8" fill="none" stroke="#999" stroke-width="3"/>
+  <path d="M167 130 L172 130" stroke="#999" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Brand stamp on bottom -->
+  <text x="200" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#aaa">MADE FOR CHAMPIONS</text>
+  
+  <!-- Shadow -->
+  <ellipse cx="205" cy="420" rx="40" ry="15" fill="#000" opacity="0.3"/>
+</svg>

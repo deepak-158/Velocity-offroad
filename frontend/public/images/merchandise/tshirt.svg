@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="shirtGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff4500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f8f9fa"/>
+  
+  <!-- T-Shirt Body -->
+  <path d="M120 120 L120 100 Q120 80 140 80 L160 80 L160 60 Q160 40 180 40 L220 40 Q240 40 240 60 L240 80 L260 80 Q280 80 280 100 L280 120 L300 120 L300 340 Q300 360 280 360 L120 360 Q100 360 100 340 L100 120 Z" fill="url(#shirtGradient)" stroke="#111" stroke-width="2"/>
+  
+  <!-- Sleeves -->
+  <ellipse cx="90" cy="140" rx="30" ry="50" fill="url(#shirtGradient)" stroke="#111" stroke-width="2"/>
+  <ellipse cx="310" cy="140" rx="30" ry="50" fill="url(#shirtGradient)" stroke="#111" stroke-width="2"/>
+  
+  <!-- Collar -->
+  <path d="M180 40 Q200 30 220 40 L220 60 Q200 55 180 60 Z" fill="#2a2a2a" stroke="#111" stroke-width="1"/>
+  
+  <!-- VELOCITY Logo -->
+  <g transform="translate(200, 200)">
+    <!-- Logo Circle -->
+    <circle cx="0" cy="0" r="50" fill="url(#logoGradient)" stroke="#fff" stroke-width="3"/>
+    
+    <!-- V Letter -->
+    <path d="M-25 -20 L-10 20 L0 0 L10 20 L25 -20 L15 -20 L5 10 L0 -5 L-5 10 L-15 -20 Z" fill="white" stroke="#333" stroke-width="1"/>
+    
+    <!-- Speed lines -->
+    <path d="M-35 -10 L-25 -10 M-35 0 L-25 0 M-35 10 L-25 10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <path d="M25 -10 L35 -10 M25 0 L35 0 M25 10 L35 10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- VELOCITY Text -->
+  <text x="200" y="280" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" font-weight="bold" fill="url(#logoGradient)">VELOCITY</text>
+  <text x="200" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">OFFROAD</text>
+  
+  <!-- Fabric texture -->
+  <pattern id="fabricTexture" patternUnits="userSpaceOnUse" width="4" height="4">
+    <circle cx="2" cy="2" r="0.5" fill="#ffffff" opacity="0.1"/>
+  </pattern>
+  <rect x="100" y="100" width="200" height="260" fill="url(#fabricTexture)" opacity="0.3"/>
+</svg>

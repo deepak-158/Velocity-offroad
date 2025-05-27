@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="floor-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4b5563;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="engine-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Workshop background -->
+  <rect width="800" height="450" fill="#1f2937" />
+  
+  <!-- Floor -->
+  <rect y="350" width="800" height="100" fill="url(#floor-gradient)" />
+  <path d="M0,350 L800,350" stroke="#374151" stroke-width="2" />
+  
+  <!-- Grid lines on floor -->
+  <g stroke="#374151" stroke-width="1">
+    <path d="M100,350 L100,450" />
+    <path d="M200,350 L200,450" />
+    <path d="M300,350 L300,450" />
+    <path d="M400,350 L400,450" />
+    <path d="M500,350 L500,450" />
+    <path d="M600,350 L600,450" />
+    <path d="M700,350 L700,450" />
+    <path d="M0,400 L800,400" />
+  </g>
+  
+  <!-- Workbench -->
+  <rect x="150" y="300" width="500" height="50" fill="#4b5563" />
+  <rect x="150" y="300" width="500" height="10" fill="#6b7280" />
+  <rect x="175" y="350" width="20" height="50" fill="#4b5563" />
+  <rect x="605" y="350" width="20" height="50" fill="#4b5563" />
+  
+  <!-- Engine -->
+  <g transform="translate(400, 275)">
+    <!-- Engine block -->
+    <rect x="-75" y="-60" width="150" height="60" fill="url(#engine-gradient)" />
+    
+    <!-- Cylinders -->
+    <rect x="-65" y="-80" width="20" height="20" rx="2" fill="#374151" stroke="#1f2937" stroke-width="2" />
+    <rect x="-35" y="-80" width="20" height="20" rx="2" fill="#374151" stroke="#1f2937" stroke-width="2" />
+    <rect x="-5" y="-80" width="20" height="20" rx="2" fill="#374151" stroke="#1f2937" stroke-width="2" />
+    <rect x="25" y="-80" width="20" height="20" rx="2" fill="#374151" stroke="#1f2937" stroke-width="2" />
+    
+    <!-- Intake manifold -->
+    <path d="M-60,-80 L-60,-100 L55,-100 L55,-80" stroke="#4b5563" stroke-width="5" fill="none" />
+    
+    <!-- Exhaust headers -->
+    <path d="M-55,-60 L-90,-30" stroke="#d97706" stroke-width="3" fill="none" />
+    <path d="M-25,-60 L-80,-20" stroke="#d97706" stroke-width="3" fill="none" />
+    <path d="M5,-60 L-70,-10" stroke="#d97706" stroke-width="3" fill="none" />
+    <path d="M35,-60 L-60,0" stroke="#d97706" stroke-width="3" fill="none" />
+    
+    <!-- Oil pan -->
+    <rect x="-60" y="0" width="120" height="10" fill="#1f2937" />
+    
+    <!-- Engine details -->
+    <circle cx="60" cy="-40" r="15" fill="#374151" stroke="#1f2937" stroke-width="2" />
+    <circle cx="60" cy="-40" r="5" fill="#1f2937" />
+    <rect x="-85" y="-45" width="20" height="30" rx="2" fill="#374151" />
+  </g>
+  
+  <!-- Tools on workbench -->
+  <rect x="200" y="280" width="40" height="20" fill="#d1d5db" />
+  <rect x="550" y="290" width="60" height="10" fill="#d1d5db" />
+  <circle cx="580" y="275" r="10" fill="#d1d5db" />
+  
+  <!-- Engineer 1 -->
+  <g transform="translate(250, 380)">
+    <!-- Body -->
+    <rect x="-15" y="-40" width="30" height="60" rx="5" fill="#0ea5e9" />
+    <!-- Head -->
+    <circle cx="0" cy="-55" r="15" fill="#d1d5db" />
+    <!-- Arms -->
+    <path d="M-15,-20 L-40,-10" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round" />
+    <path d="M15,-20 L50,0" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round" />
+    <!-- Legs -->
+    <rect x="-10" y="20" width="8" height="30" fill="#1f2937" />
+    <rect x="2" y="20" width="8" height="30" fill="#1f2937" />
+  </g>
+  
+  <!-- Engineer 2 -->
+  <g transform="translate(500, 370)">
+    <!-- Body -->
+    <rect x="-15" y="-40" width="30" height="60" rx="5" fill="#0ea5e9" />
+    <!-- Head -->
+    <circle cx="0" cy="-55" r="15" fill="#d1d5db" />
+    <!-- Arms -->
+    <path d="M-15,-20 L-30,0" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round" />
+    <path d="M15,-25 L40,-40" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round" />
+    <!-- Legs -->
+    <rect x="-10" y="20" width="8" height="30" fill="#1f2937" />
+    <rect x="2" y="20" width="8" height="30" fill="#1f2937" />
+  </g>
+  
+  <!-- Lighting effects -->
+  <rect x="200" y="0" width="400" height="150" fill="url(#floor-gradient)" opacity="0.1" />
+  <ellipse cx="400" cy="150" rx="250" ry="100" fill="white" opacity="0.05" />
+  
+  <!-- Workshop details -->
+  <rect x="20" y="100" width="100" height="150" fill="#4b5563" />
+  <rect x="30" y="110" width="80" height="130" fill="#374151" />
+  <rect x="700" y="150" width="80" height="200" fill="#4b5563" />
+  <rect x="710" y="160" width="60" height="180" fill="#374151" />
+</svg> 

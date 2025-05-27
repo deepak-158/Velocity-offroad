@@ -1,0 +1,65 @@
+[build]
+  publish = "build"
+  command = "npm run build-netlify"
+  functions = "netlify/functions"
+
+# Netlify Identity configuration
+[identity]
+  # Enable identity widget
+  enabled = true
+  
+  # External providers (optional)
+  external_providers = ["google", "github"]
+  
+  # Settings
+  [identity.settings]
+    # Require email confirmation
+    confirm_email = true
+    # Invite only mode - users can only signup with an invitation
+    invite_only = true
+    # Enable password recovery
+    enable_signup = false
+
+# Redirect all routes to index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  
+# Make sure the admin path works correctly
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+# Add redirect for the refresh-data API endpoint
+[[redirects]]
+  from = "/api/refresh-data"
+  to = "/.netlify/functions/refresh-data"
+  status = 200
+  
+# Add redirect for the admin data API endpoint
+[[redirects]]
+  from = "/api/admin/data/:dataType"
+  to = "/.netlify/functions/get-data?dataType=:dataType"
+  status = 200
+
+# Add redirect for the admin save-data API endpoint
+[[redirects]]
+  from = "/api/admin/save-data"
+  to = "/.netlify/functions/save-data"
+  status = 200
+  
+# Add header for content security policy
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Content-Security-Policy = "default-src 'self' https://identity.netlify.com https://unpkg.com; script-src 'self' 'unsafe-inline' https://identity.netlify.com https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://randomuser.me https://*.netlify.app; connect-src 'self' https://api.netlify.com https://identity.netlify.com;"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"

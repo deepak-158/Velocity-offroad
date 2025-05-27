@@ -1,0 +1,159 @@
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    
+    <!-- Pattern overlay -->
+    <pattern id="news-pattern" width="100" height="100" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="100" stroke="#dc2626" stroke-width="0.5" opacity="0.05"/>
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  
+  <!-- Pattern overlay -->
+  <rect width="100%" height="100%" fill="url(#news-pattern)" />
+  
+  <!-- Newspaper/Article elements -->
+  <g opacity="0.15">
+    <!-- Article columns -->
+    <g transform="translate(300, 150)">
+      <rect x="0" y="0" width="300" height="300" rx="5" fill="#ffffff" opacity="0.1"/>
+      
+      <!-- Headlines -->
+      <rect x="20" y="20" width="260" height="20" fill="#ffffff"/>
+      <rect x="20" y="50" width="200" height="10" fill="#ffffff"/>
+      <rect x="20" y="70" width="220" height="10" fill="#ffffff"/>
+      
+      <!-- Article content -->
+      <rect x="20" y="100" width="260" height="5" fill="#ffffff"/>
+      <rect x="20" y="115" width="260" height="5" fill="#ffffff"/>
+      <rect x="20" y="130" width="260" height="5" fill="#ffffff"/>
+      <rect x="20" y="145" width="260" height="5" fill="#ffffff"/>
+      <rect x="20" y="160" width="260" height="5" fill="#ffffff"/>
+      <rect x="20" y="175" width="180" height="5" fill="#ffffff"/>
+      
+      <!-- Image placeholder -->
+      <rect x="20" y="190" width="260" height="90" rx="3" fill="#ffffff" opacity="0.3"/>
+    </g>
+    
+    <!-- Second article -->
+    <g transform="translate(650, 180)">
+      <rect x="0" y="0" width="280" height="250" rx="5" fill="#ffffff" opacity="0.1"/>
+      
+      <!-- Headlines -->
+      <rect x="20" y="20" width="240" height="15" fill="#ffffff"/>
+      <rect x="20" y="45" width="190" height="8" fill="#ffffff"/>
+      
+      <!-- Article content -->
+      <rect x="20" y="65" width="240" height="4" fill="#ffffff"/>
+      <rect x="20" y="75" width="240" height="4" fill="#ffffff"/>
+      <rect x="20" y="85" width="240" height="4" fill="#ffffff"/>
+      <rect x="20" y="95" width="240" height="4" fill="#ffffff"/>
+      <rect x="20" y="105" width="140" height="4" fill="#ffffff"/>
+      
+      <!-- Image placeholder -->
+      <rect x="20" y="120" width="240" height="110" rx="3" fill="#ffffff" opacity="0.3"/>
+    </g>
+    
+    <!-- Third article -->
+    <g transform="translate(980, 200)">
+      <rect x="0" y="0" width="260" height="230" rx="5" fill="#ffffff" opacity="0.1"/>
+      
+      <!-- Image placeholder -->
+      <rect x="20" y="20" width="220" height="100" rx="3" fill="#ffffff" opacity="0.3"/>
+      
+      <!-- Headlines -->
+      <rect x="20" y="130" width="220" height="15" fill="#ffffff"/>
+      <rect x="20" y="155" width="170" height="8" fill="#ffffff"/>
+      
+      <!-- Article content -->
+      <rect x="20" y="175" width="220" height="4" fill="#ffffff"/>
+      <rect x="20" y="185" width="220" height="4" fill="#ffffff"/>
+      <rect x="20" y="195" width="220" height="4" fill="#ffffff"/>
+      <rect x="20" y="205" width="160" height="4" fill="#ffffff"/>
+    </g>
+    
+    <!-- News feed -->
+    <g transform="translate(1300, 150)">
+      <rect x="0" y="0" width="320" height="300" rx="5" fill="#ffffff" opacity="0.1"/>
+      
+      <!-- Feed title -->
+      <rect x="20" y="20" width="100" height="15" fill="#ffffff"/>
+      
+      <!-- Feed items -->
+      <rect x="20" y="50" width="280" height="1" fill="#ffffff"/>
+      <rect x="20" y="60" width="280" height="8" fill="#ffffff"/>
+      <rect x="20" y="75" width="200" height="4" fill="#ffffff"/>
+      
+      <rect x="20" y="90" width="280" height="1" fill="#ffffff"/>
+      <rect x="20" y="100" width="280" height="8" fill="#ffffff"/>
+      <rect x="20" y="115" width="210" height="4" fill="#ffffff"/>
+      
+      <rect x="20" y="130" width="280" height="1" fill="#ffffff"/>
+      <rect x="20" y="140" width="280" height="8" fill="#ffffff"/>
+      <rect x="20" y="155" width="190" height="4" fill="#ffffff"/>
+      
+      <rect x="20" y="170" width="280" height="1" fill="#ffffff"/>
+      <rect x="20" y="180" width="280" height="8" fill="#ffffff"/>
+      <rect x="20" y="195" width="220" height="4" fill="#ffffff"/>
+      
+      <rect x="20" y="210" width="280" height="1" fill="#ffffff"/>
+      <rect x="20" y="220" width="280" height="8" fill="#ffffff"/>
+      <rect x="20" y="235" width="200" height="4" fill="#ffffff"/>
+      
+      <rect x="20" y="250" width="280" height="1" fill="#ffffff"/>
+      <rect x="20" y="260" width="280" height="8" fill="#ffffff"/>
+      <rect x="20" y="275" width="230" height="4" fill="#ffffff"/>
+    </g>
+  </g>
+  
+  <!-- Racing news specific elements -->
+  <g opacity="0.2">
+    <!-- Racing car silhouette -->
+    <path d="M1700,350 C1750,330 1800,330 1850,350 C1870,360 1870,380 1850,390 C1800,410 1750,410 1700,390 C1680,380 1680,360 1700,350 Z" 
+          fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="1720" cy="390" r="15" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="1830" cy="390" r="15" fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Trophy -->
+    <path d="M200,450 L230,450 L230,470 C230,490 200,490 200,470 L200,450 L230,450" 
+          fill="none" stroke="#ffffff" stroke-width="2"/>
+    <rect x="210" y="470" width="10" height="20" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <rect x="200" y="490" width="30" height="5" fill="none" stroke="#ffffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Red accent elements -->
+  <g opacity="0.3">
+    <!-- Breaking news banner -->
+    <rect x="300" y="100" width="300" height="40" fill="#dc2626" opacity="0.3"/>
+    <text x="450" y="125" font-family="Arial" font-size="16" text-anchor="middle" fill="#ffffff">BREAKING NEWS</text>
+    
+    <!-- Highlights -->
+    <rect x="980" y="200" width="5" height="230" fill="#dc2626"/>
+    <circle cx="1300" cy="150" r="10" fill="#dc2626"/>
+    
+    <!-- Race track -->
+    <path d="M300,500 C500,450 700,550 900,500 C1100,450 1300,550 1500,500" 
+          fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- Dark vignette effect -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="85%" stop-color="#000000" stop-opacity="0.4" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.7" />
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vignette)" />
+  
+  <!-- Bottom shadow gradient for text readability -->
+  <linearGradient id="bottom-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.5" />
+  </linearGradient>
+  <rect width="100%" height="150" y="450" fill="url(#bottom-shadow)" />
+</svg> 

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="carGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff4500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc3300;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wheelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="rimGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#999;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#555;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f8f9fa"/>
+  
+  <!-- Base/Stand -->
+  <ellipse cx="200" cy="320" rx="120" ry="15" fill="#ddd" stroke="#ccc" stroke-width="1"/>
+  <rect x="80" y="315" width="240" height="10" fill="#eee" stroke="#ddd" stroke-width="1"/>
+  
+  <!-- Car Body -->
+  <!-- Main chassis -->
+  <rect x="120" y="220" width="160" height="40" rx="20" fill="url(#carGradient)" stroke="#aa2200" stroke-width="2"/>
+  
+  <!-- Cockpit -->
+  <rect x="140" y="200" width="120" height="30" rx="15" fill="url(#carGradient)" stroke="#aa2200" stroke-width="2"/>
+  
+  <!-- Nose cone -->
+  <path d="M120 240 L80 235 Q60 235 60 240 Q60 245 80 245 L120 240 Z" fill="url(#carGradient)" stroke="#aa2200" stroke-width="2"/>
+  
+  <!-- Rear wing -->
+  <rect x="280" y="210" width="40" height="8" rx="4" fill="#222" stroke="#111" stroke-width="1"/>
+  <rect x="285" y="205" width="30" height="3" rx="1.5" fill="#333"/>
+  
+  <!-- Front wing -->
+  <rect x="60" y="235" width="25" height="6" rx="3" fill="#222" stroke="#111" stroke-width="1"/>
+  <rect x="55" y="232" width="35" height="2" rx="1" fill="#333"/>
+  
+  <!-- Wheels -->
+  <!-- Front left wheel -->
+  <circle cx="110" cy="270" r="25" fill="url(#wheelGradient)" stroke="#000" stroke-width="2"/>
+  <circle cx="110" cy="270" r="18" fill="url(#rimGradient)" stroke="#777" stroke-width="1"/>
+  <circle cx="110" cy="270" r="8" fill="#333"/>
+  <path d="M110 262 L110 278 M102 270 L118 270" stroke="#888" stroke-width="2"/>
+  
+  <!-- Front right wheel -->
+  <circle cx="290" cy="270" r="25" fill="url(#wheelGradient)" stroke="#000" stroke-width="2"/>
+  <circle cx="290" cy="270" r="18" fill="url(#rimGradient)" stroke="#777" stroke-width="1"/>
+  <circle cx="290" cy="270" r="8" fill="#333"/>
+  <path d="M290 262 L290 278 M282 270 L298 270" stroke="#888" stroke-width="2"/>
+  
+  <!-- Rear left wheel -->
+  <circle cx="130" cy="270" r="25" fill="url(#wheelGradient)" stroke="#000" stroke-width="2"/>
+  <circle cx="130" cy="270" r="18" fill="url(#rimGradient)" stroke="#777" stroke-width="1"/>
+  <circle cx="130" cy="270" r="8" fill="#333"/>
+  <path d="M130 262 L130 278 M122 270 L138 270" stroke="#888" stroke-width="2"/>
+  
+  <!-- Rear right wheel -->
+  <circle cx="270" cy="270" r="25" fill="url(#wheelGradient)" stroke="#000" stroke-width="2"/>
+  <circle cx="270" cy="270" r="18" fill="url(#rimGradient)" stroke="#777" stroke-width="1"/>
+  <circle cx="270" cy="270" r="8" fill="#333"/>
+  <path d="M270 262 L270 278 M262 270 L278 270" stroke="#888" stroke-width="2"/>
+  
+  <!-- Car details -->
+  <!-- Number -->
+  <circle cx="200" cy="215" r="15" fill="white" stroke="#aa2200" stroke-width="2"/>
+  <text x="200" y="220" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="14" font-weight="bold" fill="#aa2200">23</text>
+  
+  <!-- VELOCITY Logo on side -->
+  <g transform="translate(180, 240)">
+    <rect x="0" y="0" width="40" height="12" rx="6" fill="white" opacity="0.9"/>
+    <text x="20" y="8" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" font-weight="bold" fill="#ff4500">VELOCITY</text>
+  </g>
+  
+  <!-- Aerodynamic elements -->
+  <path d="M90 245 L100 242 L100 248 Z" fill="#ff4500"/>
+  <path d="M300 245 L310 242 L310 248 Z" fill="#ff4500"/>
+  
+  <!-- Reflection/shine -->
+  <ellipse cx="200" cy="210" rx="40" ry="8" fill="white" opacity="0.3"/>
+  
+  <!-- Title -->
+  <text x="200" y="60" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="18" font-weight="bold" fill="#333">2023 RACING CAR</text>
+  <text x="200" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">1:18 Scale Model</text>
+  
+  <!-- Shadow -->
+  <ellipse cx="205" cy="330" rx="100" ry="20" fill="#000" opacity="0.2"/>
+</svg>

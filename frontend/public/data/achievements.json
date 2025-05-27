@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "title": "National Racing Championship 2023",
+    "description": "A thrilling national racing championship where teams from all over the country competed to showcase their speed and engineering skills.",
+    "date": "2023-12-10",
+    "venue": "National Racing Circuit",
+    "category": "competition",
+    "imageUrl": "/images/achievements/achievement-placeholder.svg",
+    "additionalAwards": [
+      "Fastest Pit Stop",
+      "Most Efficient Vehicle"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Engineering Innovation Award 2023",
+    "description": "Awarded for outstanding innovation in suspension system design that enhanced vehicle control and safety.",
+    "date": "2023-11-15",
+    "venue": "University Engineering Conference",
+    "category": "innovation",
+    "imageUrl": "/images/achievements/achievement-placeholder.svg",
+    "additionalAwards": [
+      "Best Engineering Design",
+      "Most Sustainable Materials"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Regional Racing Series 2023 - 1st Place",
+    "description": "Achieved first place in the regional racing series by demonstrating consistent performance and teamwork.",
+    "date": "2023-09-25",
+    "venue": "Regional Racing Complex",
+    "category": "competition",
+    "imageUrl": "/images/achievements/achievement-placeholder.svg",
+    "additionalAwards": [
+      "Fastest Lap Time",
+      "Best Team Collaboration"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Sustainability in Engineering Award",
+    "description": "Recognized for pioneering sustainable engineering practices and use of eco-friendly materials in vehicle design.",
+    "date": "2023-10-05",
+    "venue": "Green Engineering Summit",
+    "category": "sustainability",
+    "imageUrl": "/images/achievements/achievement-placeholder.svg"
+  },
+  {
+    "id": "5",
+    "title": "Winter Challenge 2022 - 3rd Place",
+    "description": "Secured third place in a challenging winter race, highlighting excellent vehicle performance in tough conditions.",
+    "date": "2022-12-18",
+    "venue": "Mountain Racing Circuit",
+    "category": "competition",
+    "imageUrl": "/images/achievements/achievement-placeholder.svg"
+  },
+  {
+    "id": "6",
+    "title": "Best Technical Paper - Aerodynamics Innovation",
+    "description": "Awarded Best Technical Paper for innovative aerodynamic solutions that improved racing car speed and stability.",
+    "date": "2023-07-20",
+    "venue": "International Engineering Conference",
+    "category": "academic",
+    "imageUrl": "/images/achievements/achievement-placeholder.svg"
+  }
+]

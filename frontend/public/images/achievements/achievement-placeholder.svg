@@ -1,0 +1,48 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Trophy Icon -->
+  <g transform="translate(150, 50)">
+    <!-- Trophy Cup -->
+    <path d="M20 40 L80 40 L75 80 L25 80 Z" fill="none" stroke="#64748b" stroke-width="2"/>
+    <path d="M15 40 L85 40 L82 50 L18 50 Z" fill="none" stroke="#64748b" stroke-width="2"/>
+    
+    <!-- Trophy Handles -->
+    <path d="M15 45 Q5 45 5 55 Q5 65 15 65" fill="none" stroke="#64748b" stroke-width="2"/>
+    <path d="M85 45 Q95 45 95 55 Q95 65 85 65" fill="none" stroke="#64748b" stroke-width="2"/>
+    
+    <!-- Trophy Base -->
+    <rect x="35" y="80" width="30" height="15" fill="none" stroke="#64748b" stroke-width="2"/>
+    <rect x="25" y="95" width="50" height="10" fill="none" stroke="#64748b" stroke-width="2"/>
+    
+    <!-- Trophy Details -->
+    <circle cx="50" cy="60" r="8" fill="none" stroke="#64748b" stroke-width="2"/>
+    <text x="50" y="66" text-anchor="middle" font-family="Arial" font-size="10" fill="#64748b">1st</text>
+  </g>
+  
+  <!-- Laurel Branches -->
+  <g transform="translate(80, 120)">
+    <!-- Left Branch -->
+    <path d="M0 20 Q10 10 20 20 Q30 30 40 20" fill="none" stroke="#64748b" stroke-width="2"/>
+    <path d="M5 25 Q15 15 25 25 Q35 35 45 25" fill="none" stroke="#64748b" stroke-width="1"/>
+    
+    <!-- Right Branch -->
+    <path d="M200 20 Q190 10 180 20 Q170 30 160 20" fill="none" stroke="#64748b" stroke-width="2"/>
+    <path d="M195 25 Q185 15 175 25 Q165 35 155 25" fill="none" stroke="#64748b" stroke-width="1"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="200" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b">ACHIEVEMENT</text>
+  <text x="200" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="#64748b">VELOCITY OFFROAD</text>
+  
+  <!-- Decorative Lines -->
+  <line x1="100" y1="240" x2="300" y2="240" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="120" y1="250" x2="280" y2="250" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Corner Decorations -->
+  <circle cx="50" cy="50" r="3" fill="#e2e8f0"/>
+  <circle cx="350" cy="50" r="3" fill="#e2e8f0"/>
+  <circle cx="50" cy="250" r="3" fill="#e2e8f0"/>
+  <circle cx="350" cy="250" r="3" fill="#e2e8f0"/>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="trophy-silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#94a3b8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg-gradient)" rx="10" />
+  
+  <!-- Award plaque body -->
+  <rect x="100" y="60" width="200" height="150" rx="5" fill="url(#trophy-silver)" stroke="#94a3b8" stroke-width="2" />
+  
+  <!-- Award details -->
+  <rect x="120" y="80" width="160" height="30" rx="2" fill="#0c4a6e" />
+  <text x="200" y="100" font-family="Racing Sans One, sans-serif" font-size="14" text-anchor="middle" fill="white">ENGINEERING</text>
+  
+  <rect x="120" y="120" width="160" height="30" rx="2" fill="#0c4a6e" />
+  <text x="200" y="140" font-family="Racing Sans One, sans-serif" font-size="14" text-anchor="middle" fill="white">EXCELLENCE</text>
+  
+  <!-- Gears to represent engineering -->
+  <g transform="translate(160, 180)">
+    <!-- Main gear -->
+    <circle cx="0" cy="0" r="25" fill="#64748b" />
+    <circle cx="0" cy="0" r="15" fill="#94a3b8" />
+    <circle cx="0" cy="0" r="5" fill="#64748b" />
+    
+    <!-- Gear teeth -->
+    <g stroke="#64748b" stroke-width="8" stroke-linecap="round">
+      <path d="M0,-25 V-35" />
+      <path d="M18,-18 L25,-25" />
+      <path d="M25,0 H35" />
+      <path d="M18,18 L25,25" />
+      <path d="M0,25 V35" />
+      <path d="M-18,18 L-25,25" />
+      <path d="M-25,0 H-35" />
+      <path d="M-18,-18 L-25,-25" />
+    </g>
+  </g>
+  
+  <g transform="translate(240, 180)">
+    <!-- Secondary gear -->
+    <circle cx="0" cy="0" r="20" fill="#64748b" />
+    <circle cx="0" cy="0" r="12" fill="#94a3b8" />
+    <circle cx="0" cy="0" r="4" fill="#64748b" />
+    
+    <!-- Gear teeth -->
+    <g stroke="#64748b" stroke-width="6" stroke-linecap="round">
+      <path d="M0,-20 V-28" />
+      <path d="M14,-14 L20,-20" />
+      <path d="M20,0 H28" />
+      <path d="M14,14 L20,20" />
+      <path d="M0,20 V28" />
+      <path d="M-14,14 L-20,20" />
+      <path d="M-20,0 H-28" />
+      <path d="M-14,-14 L-20,-20" />
+    </g>
+  </g>
+  
+  <!-- Award title -->
+  <rect x="70" y="250" width="260" height="30" rx="5" fill="#0c4a6e" />
+  <text x="200" y="272" font-family="Racing Sans One, sans-serif" font-size="16" text-anchor="middle" fill="white">ENGINEERING EXCELLENCE</text>
+  
+  <!-- Year badge -->
+  <circle cx="350" cy="50" r="30" fill="#0c4a6e" />
+  <text x="350" y="58" font-family="Racing Sans One, sans-serif" font-size="20" text-anchor="middle" fill="white">2022</text>
+</svg> 
