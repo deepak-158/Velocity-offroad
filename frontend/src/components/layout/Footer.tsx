@@ -58,11 +58,11 @@ const Footer = () => {
           <div>
             <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '1rem' }}>Quick Links</h3>
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <li><Link to="/" className="footer-link">Home</Link></li>
-              <li><Link to="/about" className="footer-link">About Us</Link></li>
+              <li><Link to="/about" className="footer-link">About</Link></li>
               <li><Link to="/team" className="footer-link">Team</Link></li>
-              <li><Link to="/projects" className="footer-link">Cars & Projects</Link></li>
               <li><Link to="/events" className="footer-link">Events</Link></li>
+              <li><Link to="/sponsors" className="footer-link">Sponsors</Link></li>
+              <li><Link to="/contact" className="footer-link">Contact</Link></li>
             </ul>
           </div>
           
@@ -87,4 +87,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;
