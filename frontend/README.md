@@ -1,6 +1,12 @@
-# Racing Club Frontend
+# VELOCITY OFFROAD - Frontend
 
-This is the frontend for the Racing Club website. It's built with React and TypeScript.
+This is the frontend for the VELOCITY OFFROAD racing team website. It's built with React and TypeScript.
+
+## 🚀 Live Website
+
+**🌐 [Visit the Live Website](https://velocityoffroad.netlify.app/)**
+
+**📂 [GitHub Repository](https://github.com/deepak-158/Velocity-offroad.git)**
 
 ## Data Management Approach
 
@@ -55,14 +61,33 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 
 ## Deployment
 
-To deploy the application, build it using `npm run build` and then deploy the contents of the `build` directory to your web hosting service.
+The application is deployed on **Netlify** at: **https://velocityoffroad.netlify.app/**
 
-Popular deployment options include:
-- Netlify
-- Vercel
-- GitHub Pages
-- AWS S3 + CloudFront
-- Firebase Hosting
+### Deployment Process:
+
+1. Build the project using `npm run build-netlify`
+2. The build automatically deploys to Netlify when pushed to the main branch
+3. Netlify handles form submissions and file uploads through Netlify Forms
+
+### Build Command:
+```bash
+npm run build-netlify
+```
+
+This custom build command:
+- Creates an optimized production build
+- Copies data files to the build directory
+- Prepares the app for Netlify deployment with form handling
+
+## Contact Form Features
+
+The contact form includes:
+- **Text Fields**: Name, email, phone, subject, message
+- **Media Upload**: Support for images, videos, PDFs, and Word documents
+- **Smart Submission**: Uses FormData for file uploads, URL encoding for text-only submissions
+- **Netlify Integration**: Seamless form handling through Netlify Forms
+- **File Validation**: Accepts common file types with size guidance
+- **User Feedback**: Clear success/error messages and file selection feedback
 
 ## Learn More
 
@@ -88,4 +113,6 @@ For more information about React, visit the [React documentation](https://reactj
   - About page
   - Team members
   - Projects showcase
-  - Contact information
+  - Contact form with media upload functionality
+  - Interactive map integration
+  - Gallery and events showcase

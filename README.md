@@ -6,7 +6,9 @@ A modern, responsive website for the VELOCITY OFFROAD team built with React, Typ
 
 ## 🚀 Live Demo
 
-[Visit the website](https://your-racing-website-url.com) - Replace with your actual deployed website URL
+**🌐 [Visit the Live Website](https://velocityoffroad.netlify.app/)**
+
+**📂 [GitHub Repository](https://github.com/deepak-158/Velocity-offroad.git)**
 
 ## ✨ Features
 
@@ -26,7 +28,7 @@ A modern, responsive website for the VELOCITY OFFROAD team built with React, Typ
 - **Gallery**: Photos and videos from races and events
 - **Sponsors**: Information about team sponsors and sponsorship opportunities
 - **Merchandise**: Team merchandise shop
-- **Contact**: Contact form and information
+- **Contact**: Contact form with media upload functionality (images, videos, PDFs, documents) and interactive map
 
 ## 🛠️ Technology Stack
 
@@ -82,8 +84,9 @@ This project uses JSON files for data management:
 ### Installation
 
 1. Clone the repository
-   ```bash   git clone https://github.com/your-username/velocity-offroad.git
-   cd velocity-offroad/frontend
+   ```bash
+   git clone https://github.com/deepak-158/Velocity-offroad.git
+   cd Velocity-offroad/frontend
    ```
 
 2. Install dependencies
