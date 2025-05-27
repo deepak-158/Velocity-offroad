@@ -43,7 +43,6 @@ const ContactPage: React.FC = () => {
       };
     }
   }, []);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -54,50 +53,38 @@ const ContactPage: React.FC = () => {
       const form = e.target as HTMLFormElement;
       
       // Create FormData object
-      const data = new FormData(form);
+      const formData = new FormData(form);
       
-      // Make sure form name is included
-      data.append('form-name', 'contact');
-      
-      // Handle the file upload with the correct field name
-      if (formState.image) {
-        data.delete('image'); // Remove the old file field
-        data.append('file-upload', formState.image); // Add with the correct name
-      }
-
       // Submit to Netlify
       const response = await fetch('/', {
         method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-        },
-        body: data
+        body: formData
       });
 
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
+      if (response.ok) {
+        // Show success message
+        setSubmitStatus({
+          type: 'success',
+          message: 'Thank you for your message! We will get back to you soon.'
+        });
 
-      // Show success message
-      setSubmitStatus({
-        type: 'success',
-        message: 'Thank you for your message! We will get back to you soon.'
-      });
+        // Reset form
+        setFormState({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+          image: null
+        });
 
-      // Reset form
-      setFormState({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
-        image: null
-      });
-
-      // Reset file input
-      const fileInput = form.querySelector('input[type="file"]') as HTMLInputElement;
-      if (fileInput) {
-        fileInput.value = '';
+        // Reset file input
+        const fileInput = form.querySelector('input[type="file"]') as HTMLInputElement;
+        if (fileInput) {
+          fileInput.value = '';
+        }
+      } else {
+        throw new Error('Form submission failed');
       }
     } catch (error) {
       console.error('Form submission error:', error);
@@ -314,15 +301,12 @@ const ContactPage: React.FC = () => {
               }}>
                 Fill out the form below and we'll get back to you as soon as possible.
               </p>
-              
-              <form
+                <form
                 name="contact"
                 method="POST"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
-                netlify-honeypot="bot-field"
                 encType="multipart/form-data"
-                action="/"
                 onSubmit={handleSubmit}
                 style={{
                   backgroundColor: 'white',
@@ -578,8 +562,7 @@ const ContactPage: React.FC = () => {
               }}>
                 Visit our workshop or connect with us on social media to stay updated with our latest racing projects and events.
               </p>
-              
-              {/* Interactive Map */}
+                {/* Interactive Map */}
               <div style={{
                 width: '100%',
                 height: '280px',
@@ -589,10 +572,11 @@ const ContactPage: React.FC = () => {
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                marginBottom: '2rem'
+                marginBottom: '2rem',
+                overflow: 'hidden'
               }}>
                 <iframe 
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=76.839%2C23.068%2C76.863%2C23.088&amp;layer=mapnik&amp;marker=23.0779%2C76.8505" 
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=76.839%2C23.068%2C76.863%2C23.088&layer=mapnik&marker=23.0779%2C76.8505" 
                   style={{
                     width: '100%',
                     height: '100%',
@@ -600,7 +584,30 @@ const ContactPage: React.FC = () => {
                     borderRadius: '0.5rem'
                   }}
                   title="VIT Bhopal University Map"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
+                <noscript>
+                  <div style={{
+                    width: '100%',
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: '#6b7280'
+                  }}>
+                    <p>Map cannot be displayed.</p>
+                    <a 
+                      href="https://www.openstreetmap.org/?mlat=23.0779&mlon=76.8505#map=15/23.0779/76.8505" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      style={{ color: 'var(--color-primary-600)' }}
+                    >
+                      View map in new tab
+                    </a>
+                  </div>
+                </noscript>
                 <p style={{ 
                   color: '#6b7280', 
                   marginTop: '0.5rem', 
