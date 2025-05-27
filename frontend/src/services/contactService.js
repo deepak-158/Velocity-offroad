@@ -1,7 +1,3 @@
-/**
- * Contact Form Service
- * Handles contact form submissions and storage
- */
 
 import axios from 'axios';
 

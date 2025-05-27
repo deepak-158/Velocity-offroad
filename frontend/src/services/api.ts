@@ -1,7 +1,4 @@
-// This file now serves as a compatibility layer for components that
-// might still be using the old API service.
-// It redirects all calls to our local dataService instead.
-
+// This file provides a compatibility layer for the frontend to interact with the backend services.
 import dataService, { Member, Project } from './dataService';
 
 // Function to check if the backend server is running
