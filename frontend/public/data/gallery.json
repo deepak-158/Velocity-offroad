@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "title": "Car Unveiling 2024",
+    "category": "cars",
+    "type": "image",
+    "url": "/images/gallery/gallery-placeholder.svg",
+    "alt": "Team unveiling the 2024 racing car model",
+    "description": "Our team proudly unveiled the 2024 racing car model at the annual engineering expo.",
+    "date": "2024-02-15"
+  },
+  {
+    "id": "2",
+    "title": "Wind Tunnel Testing",
+    "category": "engineering",
+    "type": "image",
+    "url": "/images/gallery/gallery-placeholder.svg",
+    "alt": "Wind tunnel testing of car aerodynamics",
+    "description": "Testing the aerodynamic properties of our latest car design in the university wind tunnel.",
+    "date": "2023-11-05"
+  },
+  {
+    "id": "3",
+    "title": "Engine Assembly",
+    "category": "engineering",
+    "type": "image",
+    "url": "/images/gallery/gallery-placeholder.svg",
+    "alt": "Team members assembling the engine",
+    "description": "Our mechanical engineering team assembling the custom engine for the 2024 model.",
+    "date": "2023-10-22"
+  },
+  {
+    "id": "4",
+    "title": "Testing Day",
+    "category": "testing",
+    "type": "image",
+    "url": "/images/gallery/gallery-placeholder.svg",
+    "alt": "Car on the test track",
+    "description": "First test run of our new car design at the university test track.",
+    "date": "2024-01-30"
+  },
+  {
+    "id": "5",
+    "title": "Team Workshop",
+    "category": "team",
+    "type": "image",
+    "url": "/images/gallery/gallery-placeholder.svg",
+    "alt": "Team members during a team building activity",
+    "description": "Annual team-building workshop to strengthen collaboration and communication skills.",
+    "date": "2023-09-18"
+  },
+  {
+    "id": "6",
+    "title": "Car Design Evolution",
+    "category": "cars",
+    "type": "image",
+    "url": "/images/gallery/gallery-placeholder.svg",
+    "alt": "Evolution of our car designs over the years",
+    "description": "A showcase of how our racing car designs have evolved over the past five years.",
+    "date": "2024-03-01"
+  },
+  {
+    "id": "7",
+    "title": "Engineering Presentation",
+    "category": "academic",
+    "type": "video",
+    "url": "/images/gallery/gallery-placeholder.svg",
+    "thumbnail": "/images/gallery/presentation-thumbnail.jpg",
+    "description": "Team presentation on innovative suspension design at the engineering conference.",
+    "date": "2023-11-15"
+  }
+]

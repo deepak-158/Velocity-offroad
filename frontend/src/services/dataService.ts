@@ -130,6 +130,14 @@ export interface RacingJourney {
   link?: string;
 }
 
+export interface CarouselImage {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  link?: string;
+}
+
 export interface TeamInfo {
   welcome: {
     title: string;
@@ -149,7 +157,8 @@ export interface TeamInfo {
 }
 
 // Data service with methods to access the local JSON data
-const dataService = {  // Helper to check data store status
+const dataService = {
+  // Helper to check data store status
   _dataStore: {
     members: null,
     projects: null,
@@ -160,8 +169,9 @@ const dataService = {  // Helper to check data store status
     news: null,
     achievements: null,
     racingJourney: null,
-    teamInfo: null
-  },
+    teamInfo: null,
+    carousel: null
+  } as any,
 
   // Dynamic data loading methods
   _loadMembers: async () => {
@@ -253,6 +263,7 @@ const dataService = {  // Helper to check data store status
     }
     return racingJourneyData;
   },
+
   _loadTeamInfo: async () => {
     if (USE_DYNAMIC_LOADING) {
       if (!dataService._dataStore.teamInfo) {
@@ -261,6 +272,16 @@ const dataService = {  // Helper to check data store status
       return dataService._dataStore.teamInfo || teamInfoData;
     }
     return teamInfoData;
+  },
+
+  _loadCarousel: async () => {
+    if (USE_DYNAMIC_LOADING) {
+      if (!dataService._dataStore.carousel) {
+        dataService._dataStore.carousel = await dynamicDataService.getGallery(); // Use gallery as carousel
+      }
+      return dataService._dataStore.carousel || galleryData;
+    }
+    return galleryData;
   },
 
   // Member methods
@@ -304,24 +325,6 @@ const dataService = {  // Helper to check data store status
   },
 
   // Event methods
-  getAllEvents: async (): Promise<Event[]> => {
-    const data = await dataService._loadEvents();
-    return data as Event[];
-  },
-
-  getEventById: async (id: string): Promise<Event | undefined> => {
-    const data = await dataService._loadEvents();
-    return (data as Event[]).find(event => event.id === id);
-  },
-
-  getUpcomingEvents: async (): Promise<Event[]> => {
-    const data = await dataService._loadEvents();
-    return (data as Event[]).filter(event => event.isUpcoming);
-  },
-
-  getPastEvents: async (): Promise<Event[]> => {
-    const data = await dataService._loadEvents();
-    return (data as Event[]).filter(event => !event.isUpcoming);
   getAllEvents: async (): Promise<Event[]> => {
     const data = await dataService._loadEvents();
     return data as Event[];
@@ -457,7 +460,8 @@ const dataService = {  // Helper to check data store status
     const data = await dataService._loadTeamInfo();
     return (data as TeamInfo).welcome;
   },
-    getTeamMissionInfo: async () => {
+
+  getTeamMissionInfo: async () => {
     const data = await dataService._loadTeamInfo();
     return (data as TeamInfo).mission;
   },
@@ -467,7 +471,8 @@ const dataService = {  // Helper to check data store status
     const data = await dataService._loadCarousel();
     return data as CarouselImage[];
   },
-    // Force refresh all data
+
+  // Force refresh all data
   refreshAllData: async () => {
     dataService._dataStore = {
       members: null,

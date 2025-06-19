@@ -1,0 +1,131 @@
+[
+  {
+    "id": "e1",
+    "title": "Annual Racing Competition 2023",
+    "description": "Join us for our annual racing competition where teams from across the country compete for the championship title.",
+    "date": "2023-11-15",
+    "location": "National Racing Circuit",
+    "category": "competition",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": false,
+    "results": [
+      {
+        "position": "1st",
+        "team": "Speed Demons",
+        "achievements": ["Fastest Lap", "Best Team Coordination"]
+      },
+      {
+        "position": "2nd",
+        "team": "Velocity",
+        "achievements": ["Most Innovative Design"]
+      },
+      {
+        "position": "3rd",
+        "team": "Rapid Racers",
+        "achievements": ["Best Rookie Team"]
+      }
+    ]
+  },
+  {
+    "id": "e2",
+    "title": "Technical Workshop 2024",
+    "description": "A workshop focused on the latest advancements in racing technology and engineering practices.",
+    "date": "2024-02-10",
+    "location": "Engineering Campus",
+    "category": "workshop",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": true,
+    "registrationLink": "https://example.com/register",
+    "registrationDeadline": "2024-02-01"
+  },
+  {
+    "id": "e3",
+    "title": "International Racing Expo 2024",
+    "description": "Expo showcasing cutting-edge racing technologies and designs from around the world.",
+    "date": "2024-03-20",
+    "location": "International Convention Center",
+    "category": "expo",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": true,
+    "registrationLink": "https://example.com/expo-register",
+    "registrationDeadline": "2024-03-15"
+  },
+  {
+    "id": "e4",
+    "title": "Summer Racing Championship 2024",
+    "description": "The biggest racing event of the summer with teams competing from various universities.",
+    "date": "2024-07-05",
+    "location": "Summer Racing Track",
+    "category": "competition",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": true,
+    "registrationLink": "https://example.com/summer-register",
+    "registrationDeadline": "2024-06-25"
+  },
+  {
+    "id": "e5",
+    "title": "Team Building Retreat 2023",
+    "description": "A weekend retreat focused on team building activities and strategy planning.",
+    "date": "2023-10-15",
+    "location": "Mountain Resort",
+    "category": "team",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": false
+  },
+  {
+    "id": "e6",
+    "title": "Sponsor Appreciation Gala 2023",
+    "description": "Annual gala dinner to thank our sponsors and supporters.",
+    "date": "2023-12-10",
+    "location": "Grand Hotel Ballroom",
+    "category": "networking",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": false
+  },
+  {
+    "id": "e7",
+    "title": "Winter Racing Challenge 2025",
+    "description": "A high-adrenaline winter racing event bringing together top teams nationwide.",
+    "date": "2025-01-15",
+    "location": "Frost Valley Raceway",
+    "category": "competition",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": true,
+    "results": []
+  },
+  {
+    "id": "e8",
+    "title": "Advanced Engineering Symposium 2025",
+    "description": "Symposium to discuss breakthroughs in automotive engineering and design.",
+    "date": "2025-03-12",
+    "location": "Tech University Auditorium",
+    "category": "academic",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": true,
+    "registrationLink": "https://example.com/symposium-register",
+    "registrationDeadline": "2025-02-28"
+  },
+  {
+    "id": "e9",
+    "title": "Spring Innovation Expo 2025",
+    "description": "Showcasing innovative projects and prototypes from university racing teams.",
+    "date": "2025-04-20",
+    "location": "City Exhibition Center",
+    "category": "expo",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": true,
+    "registrationLink": "https://example.com/spring-expo",
+    "registrationDeadline": "2025-04-10"
+  },
+  {
+    "id": "e10",
+    "title": "National Racing League Finals 2025",
+    "description": "The season finale where the best racing teams battle for the national title.",
+    "date": "2025-05-24",
+    "location": "National Speedway",
+    "category": "competition",
+    "imageUrl": "/images/events/event-placeholder.svg",
+    "isUpcoming": true,
+    "results": []
+  }
+]

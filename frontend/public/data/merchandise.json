@@ -1,0 +1,68 @@
+[  {
+    "id": "1",
+    "name": "Official Racing Jacket",
+    "description": "Official Racing Team jacket with embroidered logo and sponsor patches.",
+    "price": 89.99,
+    "category": "apparel",
+    "imageUrl": "/images/merchandise/racing-jacket.svg",
+    "availableSizes": ["S", "M", "L", "XL", "XXL"],
+    "stockQuantity": 25,
+    "featured": true
+  },  {
+    "id": "2",
+    "name": "Racing Team T-Shirt",
+    "description": "Comfortable cotton t-shirt with the team logo on front and sponsors on back.",
+    "price": 24.99,
+    "category": "apparel",
+    "imageUrl": "/images/merchandise/racing-tshirt.svg",
+    "availableSizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "stockQuantity": 50,
+    "featured": true
+  },  {
+    "id": "3",
+    "name": "Team Cap",
+    "description": "Adjustable baseball cap with embroidered team logo.",
+    "price": 19.99,
+    "category": "accessories",
+    "imageUrl": "/images/merchandise/team-cap.svg",
+    "stockQuantity": 40,
+    "featured": false
+  },  {
+    "id": "4",
+    "name": "Car Model - 2023 Edition",
+    "description": "Detailed 1:18 scale model of our 2023 racing car.",
+    "price": 79.99,
+    "category": "collectibles",
+    "imageUrl": "/images/merchandise/car-model.svg",
+    "stockQuantity": 15,
+    "featured": true
+  },  {
+    "id": "5",
+    "name": "Racing Team Hoodie",
+    "description": "Warm hoodie with kangaroo pocket and printed team designs.",
+    "price": 49.99,
+    "category": "apparel",
+    "imageUrl": "/images/merchandise/racing-hoodie.svg",
+    "availableSizes": ["S", "M", "L", "XL"],
+    "stockQuantity": 30,
+    "featured": false
+  },  {
+    "id": "6",
+    "name": "Team Backpack",
+    "description": "Durable backpack with multiple compartments and team branding.",
+    "price": 39.99,
+    "category": "accessories",
+    "imageUrl": "/images/merchandise/team-backpack.svg",
+    "stockQuantity": 20,
+    "featured": false
+  },  {
+    "id": "7",
+    "name": "Racing Poster Set",
+    "description": "Set of 3 high-quality posters featuring our racing cars.",
+    "price": 29.99,
+    "category": "collectibles",
+    "imageUrl": "/images/merchandise/racing-poster-set.svg",
+    "stockQuantity": 25,
+    "featured": false
+  }
+]
