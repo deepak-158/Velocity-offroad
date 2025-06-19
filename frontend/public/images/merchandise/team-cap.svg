@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="capGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="visorGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111111;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff4500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f8f9fa"/>
+  
+  <!-- Cap Crown -->
+  <ellipse cx="200" cy="180" rx="100" ry="60" fill="url(#capGradient)" stroke="#111" stroke-width="2"/>
+  
+  <!-- Cap Top -->
+  <ellipse cx="200" cy="160" rx="90" ry="50" fill="url(#capGradient)" stroke="#111" stroke-width="2"/>
+  
+  <!-- Visor -->
+  <ellipse cx="200" cy="220" rx="120" ry="40" fill="url(#visorGradient)" stroke="#111" stroke-width="2"/>
+  
+  <!-- Visor underside -->
+  <ellipse cx="200" cy="225" rx="115" ry="35" fill="#0a0a0a" opacity="0.8"/>
+  
+  <!-- Cap panels -->
+  <path d="M200 120 L240 160 L200 200 L160 160 Z" fill="none" stroke="#555" stroke-width="1"/>
+  <path d="M200 120 L260 140 L240 180 L200 200" fill="none" stroke="#555" stroke-width="1"/>
+  <path d="M200 120 L140 140 L160 180 L200 200" fill="none" stroke="#555" stroke-width="1"/>
+  
+  <!-- Button on top -->
+  <circle cx="200" cy="120" r="8" fill="#333" stroke="#111" stroke-width="2"/>
+  <circle cx="200" cy="120" r="4" fill="#555"/>
+  
+  <!-- VELOCITY Logo on front -->
+  <g transform="translate(200, 170)">
+    <!-- Logo Circle -->
+    <circle cx="0" cy="0" r="25" fill="url(#logoGradient)" stroke="#fff" stroke-width="2"/>
+    
+    <!-- V Letter -->
+    <path d="M-12 -10 L-5 10 L0 0 L5 10 L12 -10 L8 -10 L3 5 L0 -2 L-3 5 L-8 -10 Z" fill="white" stroke="#333" stroke-width="0.5"/>
+    
+    <!-- Speed lines -->
+    <path d="M-18 -5 L-13 -5 M-18 0 L-13 0 M-18 5 L-13 5" stroke="white" stroke-width="1" stroke-linecap="round"/>
+    <path d="M13 -5 L18 -5 M13 0 L18 0 M13 5 L18 5" stroke="white" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  
+  <!-- VELOCITY Text below -->
+  <text x="200" y="250" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="14" font-weight="bold" fill="url(#logoGradient)">VELOCITY</text>
+  <text x="200" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">OFFROAD</text>
+  
+  <!-- Adjustment strap -->
+  <rect x="180" y="240" width="40" height="8" rx="4" fill="#222" stroke="#111" stroke-width="1"/>
+  <rect x="185" y="242" width="6" height="4" fill="#444"/>
+  <rect x="194" y="242" width="6" height="4" fill="#444"/>
+  <rect x="203" y="242" width="6" height="4" fill="#444"/>
+  <rect x="212" y="242" width="6" height="4" fill="#444"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="205" cy="280" rx="80" ry="15" fill="#000" opacity="0.2"/>
+</svg>

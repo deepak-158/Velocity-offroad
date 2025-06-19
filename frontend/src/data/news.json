@@ -1,0 +1,64 @@
+[
+  {
+    "id": "1",
+    "title": "National Championship Success!",
+    "content": "We're proud to announce that our team secured 2nd place in the National Racing Competition 2023! Our innovative design and exceptional teamwork paid off, earning us recognition for 'Best Engineering Design' and 'Most Efficient Vehicle'.",
+    "summary": "Velocity Offroad earns 2nd place and two special awards at the National Racing Competition.",
+    "date": "2023-12-15",
+    "author": "Team Captain",
+    "category": "competitions",
+    "imageUrl": "/images/news/news-placeholder.svg",
+    "tags": [
+      "competition",
+      "awards",
+      "achievement"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "New Partnership with TechMotors Announced",
+    "content": "We're excited to announce our new partnership with TechMotors, a leading provider of advanced motor technology. This collaboration will provide our team with cutting-edge components and technical support for our upcoming racing season. Representatives from TechMotors will also conduct workshops for our team members on the latest innovations in motor technology.",
+    "summary": "TechMotors joins as platinum sponsor, providing advanced motor technology and expertise.",
+    "date": "2024-01-10",
+    "author": "Sponsorship Coordinator",
+    "category": "partnerships",
+    "imageUrl": "/images/news/news-placeholder.svg",
+    "tags": [
+      "sponsor",
+      "partnership",
+      "technology"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Unveiling Our 2024 Racing Car Design",
+    "content": "After months of hard work and innovation, we're thrilled to unveil our 2024 racing car design. The new model features significant improvements in aerodynamics, weight reduction, and energy efficiency. Our engineering team has implemented several innovative solutions based on data collected from last year's competitions. The unveiling ceremony was attended by university officials, sponsors, and racing enthusiasts from across the region.",
+    "summary": "The team reveals its innovative 2024 racing car with improved aerodynamics and efficiency.",
+    "date": "2024-02-20",
+    "author": "Design Team Lead",
+    "category": "design",
+    "imageUrl": "/images/news/news-placeholder.svg",
+    "tags": [
+      "design",
+      "innovation",
+      "racing car",
+      "2024 model"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Engineering Workshop Series Announcement",
+    "content": "We're launching a series of engineering workshops open to all engineering students at the university. These workshops will cover topics such as aerodynamics, chassis design, electrical systems, and project management in the context of racing car development. Team members will share their expertise and practical experience from working on our racing projects. The first workshop on aerodynamics will be held on May 20, 2024.",
+    "summary": "Team to host engineering workshops covering various aspects of racing car development.",
+    "date": "2024-04-05",
+    "author": "Education Coordinator",
+    "category": "education",
+    "imageUrl": "/images/news/news-placeholder.svg",
+    "tags": [
+      "workshop",
+      "education",
+      "engineering",
+      "student development"
+    ]
+  }
+]

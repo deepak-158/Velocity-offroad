@@ -1,0 +1,14 @@
+# Netlify redirects file
+# Netlify Identity redirect rules removed - authentication no longer required
+# /.netlify/identity/* /.netlify/identity/:splat 200
+
+# API endpoints
+/api/data/* /.netlify/functions/:splat 200
+/api/save-data /.netlify/functions/save-data 200
+/api/refresh-data /.netlify/functions/refresh-data 200
+
+# Admin routes (SPA fallback)
+/admin/*    /index.html   200
+
+# Default SPA fallback for client-side routing
+/*          /index.html   200

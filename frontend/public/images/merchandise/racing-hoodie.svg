@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="hoodieGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff4500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pocketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f8f9fa"/>
+  
+  <!-- Hoodie Body -->
+  <path d="M110 120 L110 100 Q110 80 130 80 L150 80 L150 60 Q150 40 170 40 L230 40 Q250 40 250 60 L250 80 L270 80 Q290 80 290 100 L290 120 L310 120 L310 350 Q310 370 290 370 L110 370 Q90 370 90 350 L90 120 Z" fill="url(#hoodieGradient)" stroke="#111" stroke-width="2"/>
+  
+  <!-- Sleeves -->
+  <ellipse cx="80" cy="150" rx="35" ry="60" fill="url(#hoodieGradient)" stroke="#111" stroke-width="2"/>
+  <ellipse cx="320" cy="150" rx="35" ry="60" fill="url(#hoodieGradient)" stroke="#111" stroke-width="2"/>
+  
+  <!-- Hood -->
+  <path d="M150 60 Q200 30 250 60 L250 80 Q200 60 150 80 Z" fill="url(#hoodieGradient)" stroke="#111" stroke-width="2"/>
+  
+  <!-- Hood strings -->
+  <circle cx="180" cy="70" r="3" fill="#555"/>
+  <circle cx="220" cy="70" r="3" fill="#555"/>
+  <path d="M180 73 Q190 80 200 78 Q210 80 220 73" stroke="#777" stroke-width="2" fill="none"/>
+  
+  <!-- Kangaroo Pocket -->
+  <rect x="150" y="220" width="100" height="80" rx="15" fill="url(#pocketGradient)" stroke="#111" stroke-width="2"/>
+  <path d="M160 230 Q200 225 240 230" stroke="#555" stroke-width="1" fill="none"/>
+  
+  <!-- Pocket opening -->
+  <ellipse cx="200" cy="235" rx="30" ry="8" fill="#111" opacity="0.8"/>
+  
+  <!-- Ribbed cuffs -->
+  <rect x="45" y="200" width="30" height="20" rx="5" fill="#333" stroke="#111" stroke-width="1"/>
+  <path d="M47 205 L73 205 M47 210 L73 210 M47 215 L73 215" stroke="#555" stroke-width="1"/>
+  
+  <rect x="325" y="200" width="30" height="20" rx="5" fill="#333" stroke="#111" stroke-width="1"/>
+  <path d="M327 205 L353 205 M327 210 L353 210 M327 215 L353 215" stroke="#555" stroke-width="1"/>
+  
+  <!-- Bottom hem -->
+  <rect x="90" y="355" width="220" height="15" rx="5" fill="#333" stroke="#111" stroke-width="1"/>
+  <path d="M95 360 L305 360 M95 365 L305 365" stroke="#555" stroke-width="1"/>
+  
+  <!-- VELOCITY Logo -->
+  <g transform="translate(200, 180)">
+    <!-- Logo Circle -->
+    <circle cx="0" cy="0" r="30" fill="url(#logoGradient)" stroke="#fff" stroke-width="2"/>
+    
+    <!-- V Letter -->
+    <path d="M-15 -12 L-6 12 L0 0 L6 12 L15 -12 L9 -12 L3 6 L0 -3 L-3 6 L-9 -12 Z" fill="white" stroke="#333" stroke-width="0.5"/>
+    
+    <!-- Speed lines -->
+    <path d="M-21 -6 L-15 -6 M-21 0 L-15 0 M-21 6 L-15 6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M15 -6 L21 -6 M15 0 L21 0 M15 6 L21 6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- VELOCITY Text -->
+  <text x="200" y="320" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="14" font-weight="bold" fill="url(#logoGradient)">VELOCITY OFFROAD</text>
+  <text x="200" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#888">RACING TEAM</text>
+  
+  <!-- Fabric texture -->
+  <pattern id="hoodieTexture" patternUnits="userSpaceOnUse" width="6" height="6">
+    <circle cx="3" cy="3" r="0.5" fill="#ffffff" opacity="0.1"/>
+  </pattern>
+  <rect x="90" y="100" width="220" height="270" fill="url(#hoodieTexture)" opacity="0.4"/>
+  
+  <!-- Zipper -->
+  <rect x="198" y="80" width="4" height="200" fill="#666" stroke="#333" stroke-width="1"/>
+  <rect x="196" y="85" width="8" height="6" rx="2" fill="#888" stroke="#333" stroke-width="1"/>
+</svg>

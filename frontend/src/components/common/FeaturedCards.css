@@ -1,0 +1,140 @@
+/* Scrollable Cards Layout */
+.scrollable-cards-container {
+  position: relative;
+  padding-bottom: 2rem;
+  margin: 0 -1rem;
+}
+
+.scrollable-cards {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  scroll-padding: 1rem;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scrollable-cards::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scrollable-card-item {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@media (min-width: 640px) {
+  .scrollable-card-item {
+    flex: 0 0 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scrollable-card-item {
+    flex: 0 0 400px;
+  }
+}
+
+.scrollable-card-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Card Customization for Horizontal Scrolling */
+.scrollable-card-item .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollable-card-item .card-image {
+  height: 180px;
+}
+
+.scrollable-card-item .card-content {
+  flex-grow: 1;
+}
+
+.scrollable-card-item .card-action {
+  margin-top: auto;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--color-gray-600);
+  animation: fadeInOut 2s infinite;
+}
+
+.scroll-arrow {
+  width: 16px;
+  height: 16px;
+  border-right: 2px solid var(--color-primary-500);
+  border-bottom: 2px solid var(--color-primary-500);
+  transform: rotate(-45deg);
+  margin-right: 0.5rem;
+}
+
+.scroll-text {
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hide scroll indicator on touch devices */
+@media (hover: none) {
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+.section-header {
+  position: relative;
+}
+
+/* Add faded edges to indicate more content */
+.scrollable-cards-container::before,
+.scrollable-cards-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.scrollable-cards-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.scrollable-cards-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+} 

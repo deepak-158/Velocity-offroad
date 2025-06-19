@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Rahul Mehta",
+    "role": "Electronics Lead",    "bio": "Rahul is responsible for integrating intelligent electronics into our off-road vehicles, ensuring precise control and diagnostics.",
+    "image_url": "/images/team/team-member-placeholder.svg",
+    "social_links": {
+      "linkedin": "https://linkedin.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": "2",
+    "name": "Sara Ali",
+    "role": "Marketing & PR Head",    "bio": "Sara handles team branding, media relations, and sponsorship communications, keeping Velocity Offroad in the spotlight.",
+    "image_url": "/images/team/team-member-placeholder.svg",
+    "social_links": {
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Kunal Verma",
+    "role": "Design Engineer",    "bio": "Kunal creates 3D CAD models and stress-tested prototypes, bringing our vehicle designs from concept to reality.",
+    "image_url": "/images/team/team-member-placeholder.svg",
+    "social_links": {
+      "linkedin": "https://linkedin.com",
+      "dribbble": "https://dribbble.com"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Isabella Garcia",
+    "role": "Operations Manager",    "bio": "Isabella coordinates logistics, tracks timelines, and ensures every department functions smoothly before and during competitions.",
+    "image_url": "/images/team/team-member-placeholder.svg",
+    "social_links": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com"
+    }
+  }
+]
