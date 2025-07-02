@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="url(#bgGradient)" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- Person silhouette -->
+  <g transform="translate(150, 150)">
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="35" fill="#6c757d" opacity="0.6"/>
+    
+    <!-- Body -->
+    <path d="M-50 20 Q-50 -20 -25 -20 L25 -20 Q50 -20 50 20 L50 80 L-50 80 Z" fill="#6c757d" opacity="0.6"/>
+  </g>
+  
+  <!-- Placeholder text -->
+  <text x="150" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Team Member</text>
+  <text x="150" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#adb5bd">Photo</text>
+</svg>

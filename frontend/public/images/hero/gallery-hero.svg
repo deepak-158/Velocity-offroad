@@ -1,0 +1,113 @@
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    
+    <!-- Pattern overlay -->
+    <pattern id="gallery-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1" fill="#dc2626" opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  
+  <!-- Pattern overlay -->
+  <rect width="100%" height="100%" fill="url(#gallery-pattern)" />
+  
+  <!-- Photo frames -->
+  <g opacity="0.15">
+    <!-- Frame 1 - tilted left -->
+    <g transform="translate(300, 150) rotate(-15)">
+      <rect x="0" y="0" width="200" height="150" rx="5" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <rect x="10" y="10" width="180" height="130" rx="2" fill="#ffffff" opacity="0.1"/>
+    </g>
+    
+    <!-- Frame 2 - centered -->
+    <g transform="translate(700, 120)">
+      <rect x="0" y="0" width="240" height="180" rx="5" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <rect x="10" y="10" width="220" height="160" rx="2" fill="#ffffff" opacity="0.1"/>
+    </g>
+    
+    <!-- Frame 3 - tilted right -->
+    <g transform="translate(1100, 170) rotate(10)">
+      <rect x="0" y="0" width="220" height="160" rx="5" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <rect x="10" y="10" width="200" height="140" rx="2" fill="#ffffff" opacity="0.1"/>
+    </g>
+    
+    <!-- Frame 4 - polaroid style -->
+    <g transform="translate(1500, 130) rotate(-5)">
+      <rect x="0" y="0" width="180" height="220" rx="5" fill="#ffffff" opacity="0.15"/>
+      <rect x="10" y="10" width="160" height="160" rx="2" fill="none" stroke="#ffffff" stroke-width="1"/>
+      <rect x="50" y="185" width="80" height="20" fill="none" stroke="#ffffff" stroke-width="1" stroke-dasharray="2,2"/>
+    </g>
+    
+    <!-- Frame 5 - bottom row left -->
+    <g transform="translate(400, 320) rotate(5)">
+      <rect x="0" y="0" width="200" height="150" rx="5" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <rect x="10" y="10" width="180" height="130" rx="2" fill="#ffffff" opacity="0.1"/>
+    </g>
+    
+    <!-- Frame 6 - bottom row right -->
+    <g transform="translate(900, 350) rotate(-7)">
+      <rect x="0" y="0" width="240" height="180" rx="5" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <rect x="10" y="10" width="220" height="160" rx="2" fill="#ffffff" opacity="0.1"/>
+    </g>
+  </g>
+  
+  <!-- Camera elements -->
+  <g opacity="0.2" transform="translate(1300, 350)">
+    <!-- Camera body -->
+    <rect x="0" y="0" width="150" height="100" rx="10" fill="none" stroke="#ffffff" stroke-width="3"/>
+    
+    <!-- Lens -->
+    <circle cx="75" cy="50" r="30" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <circle cx="75" cy="50" r="25" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="75" cy="50" r="20" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="75" cy="50" r="15" fill="none" stroke="#ffffff" stroke-width="1"/>
+    
+    <!-- Camera details -->
+    <rect x="20" y="15" width="40" height="20" rx="5" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="135" cy="25" r="10" fill="none" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  
+  <!-- Red accent elements -->
+  <g opacity="0.3">
+    <!-- Red frame highlight -->
+    <rect x="600" y="200" width="200" height="140" rx="5" fill="none" stroke="#dc2626" stroke-width="4"/>
+    
+    <!-- Camera flash -->
+    <polygon points="1400,320 1450,250 1500,320" fill="#dc2626" opacity="0.4"/>
+    
+    <!-- Decorative elements -->
+    <circle cx="300" cy="400" r="30" fill="none" stroke="#dc2626" stroke-width="2"/>
+    <circle cx="300" cy="400" r="20" fill="none" stroke="#dc2626" stroke-width="1"/>
+    <circle cx="300" cy="400" r="10" fill="none" stroke="#dc2626" stroke-width="1"/>
+  </g>
+  
+  <!-- Racing car silhouette -->
+  <g opacity="0.1" transform="translate(1600, 400) scale(0.7)">
+    <path d="M0,50 L50,30 L100,20 L200,20 L250,30 L300,50 C320,60 320,80 300,90 L250,110 L100,110 L50,100 L0,80 C-20,70 -20,60 0,50 Z" 
+          fill="#ffffff"/>
+    <circle cx="70" cy="110" r="20" fill="none" stroke="#ffffff" stroke-width="3"/>
+    <circle cx="230" cy="110" r="20" fill="none" stroke="#ffffff" stroke-width="3"/>
+  </g>
+  
+  <!-- Dark vignette effect -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="85%" stop-color="#000000" stop-opacity="0.4" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.7" />
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vignette)" />
+  
+  <!-- Bottom shadow gradient for text readability -->
+  <linearGradient id="bottom-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.5" />
+  </linearGradient>
+  <rect width="100%" height="150" y="450" fill="url(#bottom-shadow)" />
+</svg> 

@@ -1,0 +1,18 @@
+[build]
+  publish = "build"
+  command = "npm run build-netlify"
+
+# Redirect all routes to index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Add header for content security policy
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Content-Security-Policy = "default-src 'self' https://*.netlify.app; script-src 'self' 'unsafe-inline' https://identity.netlify.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.netlify.app https://*.openstreetmap.org https://*.tile.openstreetmap.org; connect-src 'self' https://*.netlify.app; form-action 'self'; frame-src 'self' https://*.openstreetmap.org;"
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "same-origin"

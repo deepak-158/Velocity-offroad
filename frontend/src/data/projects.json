@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "title": "Next-Gen Racing Car",
+    "description": "Our latest generation racing car featuring improved aerodynamics and weight reduction.",
+    "status": "In Progress",
+    "start_date": "2024-01-15",
+    "end_date": "2024-07-30",
+    "image_url": "/images/projects/project-placeholder.svg",
+    "members": [
+      { "role": "Project Lead", "member_id": "1" },
+      { "role": "Aerodynamics Engineer", "member_id": "2" }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Electric Powertrain",
+    "description": "Development of a new electric powertrain with improved efficiency and power delivery.",
+    "status": "Completed",
+    "start_date": "2023-06-10",
+    "end_date": "2023-12-20",
+    "image_url": "/images/projects/project-placeholder.svg",
+    "members": [
+      { "role": "Electrical Lead", "member_id": "3" },
+      { "role": "Battery Specialist", "member_id": "4" }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Suspension System",
+    "description": "Custom suspension system designed for optimal handling and performance.",
+    "status": "Planning",
+    "start_date": "2024-05-01",
+    "image_url": "/images/projects/project-placeholder.svg",
+    "members": [
+      { "role": "Mechanical Lead", "member_id": "4" }
+    ]
+  }
+]

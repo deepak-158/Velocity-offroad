@@ -1,0 +1,77 @@
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    
+    <!-- Contact pattern overlay -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#dc2626" stroke-width="0.5" opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  
+  <!-- Pattern overlay -->
+  <rect width="100%" height="100%" fill="url(#grid-pattern)" />
+  
+  <!-- Abstract communication lines -->
+  <g opacity="0.15">
+    <circle cx="500" cy="300" r="5" fill="#ffffff" />
+    <circle cx="800" cy="150" r="3" fill="#ffffff" />
+    <circle cx="1100" cy="400" r="4" fill="#ffffff" />
+    <circle cx="1400" cy="200" r="6" fill="#ffffff" />
+    <circle cx="1700" cy="350" r="5" fill="#ffffff" />
+    
+    <line x1="500" y1="300" x2="800" y2="150" stroke="#ffffff" stroke-width="1" />
+    <line x1="800" y1="150" x2="1100" y2="400" stroke="#ffffff" stroke-width="1" />
+    <line x1="1100" y1="400" x2="1400" y2="200" stroke="#ffffff" stroke-width="1" />
+    <line x1="1400" y1="200" x2="1700" y2="350" stroke="#ffffff" stroke-width="1" />
+  </g>
+  
+  <!-- Red accent elements -->
+  <g opacity="0.2">
+    <circle cx="650" cy="200" r="4" fill="#dc2626" />
+    <circle cx="950" cy="350" r="5" fill="#dc2626" />
+    <circle cx="1250" cy="250" r="3" fill="#dc2626" />
+    <circle cx="1550" cy="400" r="6" fill="#dc2626" />
+    
+    <line x1="650" y1="200" x2="950" y2="350" stroke="#dc2626" stroke-width="2" />
+    <line x1="950" y1="350" x2="1250" y2="250" stroke="#dc2626" stroke-width="2" />
+    <line x1="1250" y1="250" x2="1550" y2="400" stroke="#dc2626" stroke-width="2" />
+  </g>
+  
+  <!-- Contact-themed abstract elements -->
+  <g opacity="0.15">
+    <!-- Message icon -->
+    <rect x="200" y="150" width="120" height="80" rx="10" fill="none" stroke="#ffffff" stroke-width="4"/>
+    <path d="M200,150 L260,210 L320,150" fill="none" stroke="#ffffff" stroke-width="4"/>
+    
+    <!-- Phone icon -->
+    <path d="M1650,150 C1660,140 1670,140 1680,150 L1710,180 C1720,190 1720,200 1710,210 
+             C1680,240 1650,240 1620,210 L1590,180 C1580,170 1580,160 1590,150 C1620,120 1650,120 1680,150" 
+          fill="none" stroke="#ffffff" stroke-width="4"/>
+    
+    <!-- Location pin -->
+    <circle cx="960" cy="120" r="20" fill="none" stroke="#dc2626" stroke-width="4"/>
+    <path d="M960,140 L960,200" stroke="#dc2626" stroke-width="4"/>
+  </g>
+  
+  <!-- Dark vignette effect -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="85%" stop-color="#000000" stop-opacity="0.4" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.7" />
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vignette)" />
+  
+  <!-- Bottom shadow gradient for text readability -->
+  <linearGradient id="bottom-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.5" />
+  </linearGradient>
+  <rect width="100%" height="150" y="450" fill="url(#bottom-shadow)" />
+</svg> 

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Racing Team with Vehicle",
+    "description": "Our team with our latest racing car at the National Championship. The culmination of months of hard work and dedication from every team member.",
+    "image": "/images/gallery/image.png",
+    "link": "/team"
+  },
+  {
+    "id": 2,
+    "title": "Car on Racetrack",
+    "description": "Testing day at the local circuit – pushing our car to the limits. Our drivers gather valuable data to improve performance.",
+    "image": "/images/gallery/car-track.svg",
+    "link": "/projects"
+  },
+  {
+    "id": 3,
+    "title": "Engine Workshop",
+    "description": "Our engineering team fine-tuning the engine for maximum performance. Every horsepower counts when you're competing at the highest level.",
+    "image": "/images/gallery/engine-workshop.svg",
+    "link": "/projects"
+  },
+  {
+    "id": 4,
+    "title": "Team Celebration",
+    "description": "Celebrating our podium finish at the Regional Finals. A testament to our team's perseverance and racing excellence.",
+    "image": "/images/gallery/team-celebration.svg",
+    "link": "/team"
+  }
+]

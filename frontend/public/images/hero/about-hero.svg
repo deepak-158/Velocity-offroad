@@ -1,0 +1,57 @@
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    
+    <!-- Pattern overlay -->
+    <pattern id="dot-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#dc2626" opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  
+  <!-- Pattern overlay -->
+  <rect width="100%" height="100%" fill="url(#dot-pattern)" />
+  
+  <!-- Abstract racing car shape -->
+  <g opacity="0.1" transform="translate(300, 150) scale(0.8)">
+    <path d="M100,200 Q250,150 400,180 Q600,220 800,200 Q900,190 950,220 Q980,240 970,270 Q950,310 900,330 
+              Q800,360 600,340 Q400,320 250,340 Q150,350 120,320 Q100,300 100,200 Z" 
+          fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Accents -->
+    <circle cx="200" cy="320" r="40" fill="none" stroke="#ffffff" stroke-width="10"/>
+    <circle cx="700" cy="320" r="40" fill="none" stroke="#ffffff" stroke-width="10"/>
+    
+    <!-- Red racing stripe -->
+    <path d="M300,175 Q450,160 650,180 Q800,200 900,190" 
+          fill="none" stroke="#dc2626" stroke-width="20" opacity="0.8"/>
+  </g>
+  
+  <!-- Geometric shapes -->
+  <g opacity="0.08">
+    <rect x="1500" y="100" width="120" height="120" fill="#ffffff" transform="rotate(45, 1560, 160)"/>
+    <circle cx="1600" cy="300" r="70" fill="#dc2626"/>
+    <polygon points="1500,450 1600,380 1700,450" fill="#ffffff"/>
+  </g>
+  
+  <!-- Dark vignette effect -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="85%" stop-color="#000000" stop-opacity="0.4" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.7" />
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vignette)" />
+  
+  <!-- Bottom shadow gradient for text readability -->
+  <linearGradient id="bottom-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.5" />
+  </linearGradient>
+  <rect width="100%" height="150" y="450" fill="url(#bottom-shadow)" />
+</svg> 

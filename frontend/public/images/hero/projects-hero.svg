@@ -1,0 +1,87 @@
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0a" />
+      <stop offset="100%" stop-color="#1a1a1a" />
+    </linearGradient>
+    
+    <!-- Pattern overlay -->
+    <pattern id="blueprint-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none" stroke="#dc2626" stroke-width="0.2" opacity="0.1"/>
+      <line x1="0" y1="0" x2="40" y2="40" stroke="#dc2626" stroke-width="0.2" opacity="0.1"/>
+      <line x1="40" y1="0" x2="0" y2="40" stroke="#dc2626" stroke-width="0.2" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+  
+  <!-- Pattern overlay -->
+  <rect width="100%" height="100%" fill="url(#blueprint-pattern)" />
+  
+  <!-- Technical blueprint elements -->
+  <g opacity="0.1">
+    <!-- Car body shape outline -->
+    <path d="M300,300 L500,250 L900,250 L1100,300 L1100,350 L900,400 L500,400 L300,350 Z" 
+          fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Detail lines -->
+    <line x1="500" y1="250" x2="500" y2="400" stroke="#ffffff" stroke-width="1" />
+    <line x1="900" y1="250" x2="900" y2="400" stroke="#ffffff" stroke-width="1" />
+    <line x1="700" y1="250" x2="700" y2="400" stroke="#ffffff" stroke-width="1" />
+    <line x1="300" y1="300" x2="1100" y2="300" stroke="#ffffff" stroke-width="1" />
+    <line x1="300" y1="350" x2="1100" y2="350" stroke="#ffffff" stroke-width="1" />
+    
+    <!-- Wheels -->
+    <circle cx="400" cy="400" r="50" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="1000" cy="400" r="50" fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Dimensions -->
+    <line x1="300" y1="450" x2="1100" y2="450" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="300" y1="450" x2="300" y2="440" stroke="#ffffff" stroke-width="1"/>
+    <line x1="1100" y1="450" x2="1100" y2="440" stroke="#ffffff" stroke-width="1"/>
+    <text x="700" y="470" font-family="monospace" font-size="14" fill="#ffffff" text-anchor="middle">800 mm</text>
+  </g>
+  
+  <!-- Red accent elements -->
+  <g opacity="0.3">
+    <!-- Aerodynamic flow lines -->
+    <path d="M200,270 C400,250 600,280 800,260 C1000,240 1200,270 1400,250" 
+          fill="none" stroke="#dc2626" stroke-width="1" stroke-dasharray="5,5"/>
+    <path d="M200,300 C400,280 600,310 800,290 C1000,270 1200,300 1400,280" 
+          fill="none" stroke="#dc2626" stroke-width="1" stroke-dasharray="5,5"/>
+    <path d="M200,330 C400,310 600,340 800,320 C1000,300 1200,330 1400,310" 
+          fill="none" stroke="#dc2626" stroke-width="1" stroke-dasharray="5,5"/>
+    
+    <!-- Highlight elements -->
+    <path d="M700,250 Q750,220 800,250" fill="none" stroke="#dc2626" stroke-width="3"/>
+    <circle cx="400" cy="400" r="55" fill="none" stroke="#dc2626" stroke-width="2"/>
+    <circle cx="1000" cy="400" r="55" fill="none" stroke="#dc2626" stroke-width="2"/>
+  </g>
+  
+  <!-- Technical measurement points -->
+  <g opacity="0.2">
+    <circle cx="400" cy="300" r="3" fill="#ffffff"/>
+    <circle cx="700" cy="300" r="3" fill="#ffffff"/>
+    <circle cx="1000" cy="300" r="3" fill="#ffffff"/>
+    <circle cx="400" cy="400" r="3" fill="#ffffff"/>
+    <circle cx="700" cy="320" r="3" fill="#ffffff"/>
+    <circle cx="1000" cy="400" r="3" fill="#ffffff"/>
+  </g>
+  
+  <!-- Dark vignette effect -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="85%" stop-color="#000000" stop-opacity="0.4" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.7" />
+  </radialGradient>
+  <rect width="100%" height="100%" fill="url(#vignette)" />
+  
+  <!-- Bottom shadow gradient for text readability -->
+  <linearGradient id="bottom-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#000000" stop-opacity="0" />
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.5" />
+  </linearGradient>
+  <rect width="100%" height="150" y="450" fill="url(#bottom-shadow)" />
+</svg> 

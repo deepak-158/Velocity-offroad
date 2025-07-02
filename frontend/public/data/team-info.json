@@ -1,0 +1,30 @@
+{
+  "welcome": {
+    "title": "Welcome to Velocity Offroad",
+    "description": [
+      "Velocity Offroad is a fictional racing team created as part of a portfolio project to demonstrate full-stack web development, UI/UX design, and content integration skills. It represents an engineering club that designs and builds ATV-style off-road vehicles for competitive events.",
+      "The project showcases frontend and backend development, structured content, and component-based architecture – mimicking a real-world motorsports team experience for learning purposes."
+    ],
+    "logoImage": "/images/logo/logo.png",
+    "buttonText": "About This Project",
+    "buttonLink": "/about"
+  },
+  "mission": {
+    "title": "Project Goals",
+    "statement": "This project aims to simulate a professional team website that could be used by an ATV racing club. It was built to demonstrate practical knowledge in web technologies, content modeling, and user-focused design while highlighting core values like innovation, teamwork, and technical excellence.",
+    "values": [
+      {
+        "title": "Innovation",
+        "description": "Showcasing creative UI ideas and a technically sound development process."
+      },
+      {
+        "title": "Teamwork",
+        "description": "Demonstrating how collaborative content and project structure can be implemented in solo or group projects."
+      },
+      {
+        "title": "Excellence",
+        "description": "Emphasizing high standards in coding, design, and project presentation."
+      }
+    ]
+  }
+}

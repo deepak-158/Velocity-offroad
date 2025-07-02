@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "name": "TorqueMax Industries",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "platinum",
+    "website": "https://example.com",
+    "description": "Leading manufacturer of high-performance racing components and advanced automotive technologies.",
+    "since": "2018"
+  },
+  {
+    "id": "2",
+    "name": "PowerDrive Systems",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "platinum",
+    "website": "https://example.com",
+    "description": "Innovative electric drivetrain solutions for racing and performance applications.",
+    "since": "2019"
+  },
+  {
+    "id": "3",
+    "name": "AeroFlex Composites",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "gold",
+    "website": "https://example.com",
+    "description": "Specialized carbon fiber and composite materials for lightweight racing applications.",
+    "since": "2020"
+  },
+  {
+    "id": "4",
+    "name": "Velocity Data Systems",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "gold",
+    "website": "https://example.com",
+    "description": "Advanced telemetry and data acquisition systems for racing teams.",
+    "since": "2021"
+  },
+  {
+    "id": "5",
+    "name": "PrecisionGear Manufacturing",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "silver",
+    "website": "https://example.com",
+    "description": "Custom gearing and transmission components for racing applications.",
+    "since": "2020"
+  },
+  {
+    "id": "6",
+    "name": "FastTrack Lubricants",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "silver",
+    "website": "https://example.com",
+    "description": "High-performance oils and lubricants designed for racing conditions.",
+    "since": "2022"
+  },
+  {
+    "id": "7",
+    "name": "RaceSafe Equipment",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "silver",
+    "website": "https://example.com",
+    "description": "Safety equipment and protective gear for motorsports.",
+    "since": "2021"
+  },
+  {
+    "id": "8",
+    "name": "EngineTech Solutions",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "bronze",
+    "website": "https://example.com",
+    "description": "Engine analysis and diagnostics for performance tuning.",
+    "since": "2022"
+  },
+  {
+    "id": "9",
+    "name": "RaceTrack University",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "bronze",
+    "website": "https://example.com",
+    "description": "Educational partner providing motorsports training and sponsorship for engineering teams.",
+    "since": "2023"
+  },
+  {
+    "id": "10",
+    "name": "SpeedWorks Tools",
+    "logo": "/images/sponsors/sponsor-placeholder.svg",
+    "tier": "partner",
+    "website": "https://example.com",
+    "description": "Precision tools and workshop equipment for automotive fabrication.",
+    "since": "2023"
+  }
+]

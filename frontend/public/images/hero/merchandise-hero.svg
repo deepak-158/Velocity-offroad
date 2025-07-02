@@ -1,0 +1,133 @@
+<svg width="1920" height="600" viewBox="0 0 1920 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="600" fill="#0D0D0D"/>
+  <path d="M1055.06 127.812C1143.53 101.854 1236.44 94.0398 1326.18 104.924C1415.92 115.809 1500.77 144.995 1574.4 189.995C1648.02 234.995 1708.24 294.129 1750.09 363.2C1791.95 432.272 1814.18 509.449 1815.1 588.017L1050.32 600L1055.06 127.812Z" fill="#DC2626" fill-opacity="0.35"/>
+  <path d="M1067.09 0C1106.96 15.594 1143.31 39.196 1173.75 69.125C1204.19 99.055 1228.21 134.806 1244.24 174.053C1260.27 213.3 1267.98 255.282 1266.82 297.434C1265.66 339.586 1255.65 381.051 1237.43 419.075L889.994 277.037L1067.09 0Z" fill="#DC2626" fill-opacity="0.25"/>
+  <path d="M-109.936 442.188C-21.4709 468.146 71.438 475.96 161.18 465.076C250.921 454.191 335.773 425.005 409.399 380.005C483.024 335.005 543.243 275.871 585.089 206.8C626.935 137.728 649.177 60.5505 650.098 -18.0168L-114.682 -30L-109.936 442.188Z" fill="#DC2626" fill-opacity="0.35"/>
+  <path d="M-97.9086 570C-58.0366 554.406 -21.6874 530.804 8.75051 500.875C39.1884 470.945 63.214 435.194 79.2419 395.947C95.2698 356.7 102.976 314.718 101.822 272.566C100.669 230.414 90.6564 188.949 72.4277 150.925L-274.994 292.963L-97.9086 570Z" fill="#DC2626" fill-opacity="0.25"/>
+  
+  <!-- Racing Flag Pattern in Background -->
+  <g opacity="0.1">
+    <rect x="0" y="0" width="120" height="120" fill="white"/>
+    <rect x="120" y="0" width="120" height="120" fill="black"/>
+    <rect x="240" y="0" width="120" height="120" fill="white"/>
+    <rect x="360" y="0" width="120" height="120" fill="black"/>
+    <rect x="480" y="0" width="120" height="120" fill="white"/>
+    <rect x="600" y="0" width="120" height="120" fill="black"/>
+    <rect x="720" y="0" width="120" height="120" fill="white"/>
+    <rect x="840" y="0" width="120" height="120" fill="black"/>
+    <rect x="960" y="0" width="120" height="120" fill="white"/>
+    <rect x="1080" y="0" width="120" height="120" fill="black"/>
+    <rect x="1200" y="0" width="120" height="120" fill="white"/>
+    <rect x="1320" y="0" width="120" height="120" fill="black"/>
+    <rect x="1440" y="0" width="120" height="120" fill="white"/>
+    <rect x="1560" y="0" width="120" height="120" fill="black"/>
+    <rect x="1680" y="0" width="120" height="120" fill="white"/>
+    <rect x="1800" y="0" width="120" height="120" fill="black"/>
+    
+    <rect x="0" y="120" width="120" height="120" fill="black"/>
+    <rect x="120" y="120" width="120" height="120" fill="white"/>
+    <rect x="240" y="120" width="120" height="120" fill="black"/>
+    <rect x="360" y="120" width="120" height="120" fill="white"/>
+    <rect x="480" y="120" width="120" height="120" fill="black"/>
+    <rect x="600" y="120" width="120" height="120" fill="white"/>
+    <rect x="720" y="120" width="120" height="120" fill="black"/>
+    <rect x="840" y="120" width="120" height="120" fill="white"/>
+    <rect x="960" y="120" width="120" height="120" fill="black"/>
+    <rect x="1080" y="120" width="120" height="120" fill="white"/>
+    <rect x="1200" y="120" width="120" height="120" fill="black"/>
+    <rect x="1320" y="120" width="120" height="120" fill="white"/>
+    <rect x="1440" y="120" width="120" height="120" fill="black"/>
+    <rect x="1560" y="120" width="120" height="120" fill="white"/>
+    <rect x="1680" y="120" width="120" height="120" fill="black"/>
+    <rect x="1800" y="120" width="120" height="120" fill="white"/>
+    
+    <rect x="0" y="240" width="120" height="120" fill="white"/>
+    <rect x="120" y="240" width="120" height="120" fill="black"/>
+    <rect x="240" y="240" width="120" height="120" fill="white"/>
+    <rect x="360" y="240" width="120" height="120" fill="black"/>
+    <rect x="480" y="240" width="120" height="120" fill="white"/>
+    <rect x="600" y="240" width="120" height="120" fill="black"/>
+    <rect x="720" y="240" width="120" height="120" fill="white"/>
+    <rect x="840" y="240" width="120" height="120" fill="black"/>
+    <rect x="960" y="240" width="120" height="120" fill="white"/>
+    <rect x="1080" y="240" width="120" height="120" fill="black"/>
+    <rect x="1200" y="240" width="120" height="120" fill="white"/>
+    <rect x="1320" y="240" width="120" height="120" fill="black"/>
+    <rect x="1440" y="240" width="120" height="120" fill="white"/>
+    <rect x="1560" y="240" width="120" height="120" fill="black"/>
+    <rect x="1680" y="240" width="120" height="120" fill="white"/>
+    <rect x="1800" y="240" width="120" height="120" fill="black"/>
+    
+    <rect x="0" y="360" width="120" height="120" fill="black"/>
+    <rect x="120" y="360" width="120" height="120" fill="white"/>
+    <rect x="240" y="360" width="120" height="120" fill="black"/>
+    <rect x="360" y="360" width="120" height="120" fill="white"/>
+    <rect x="480" y="360" width="120" height="120" fill="black"/>
+    <rect x="600" y="360" width="120" height="120" fill="white"/>
+    <rect x="720" y="360" width="120" height="120" fill="black"/>
+    <rect x="840" y="360" width="120" height="120" fill="white"/>
+    <rect x="960" y="360" width="120" height="120" fill="black"/>
+    <rect x="1080" y="360" width="120" height="120" fill="white"/>
+    <rect x="1200" y="360" width="120" height="120" fill="black"/>
+    <rect x="1320" y="360" width="120" height="120" fill="white"/>
+    <rect x="1440" y="360" width="120" height="120" fill="black"/>
+    <rect x="1560" y="360" width="120" height="120" fill="white"/>
+    <rect x="1680" y="360" width="120" height="120" fill="black"/>
+    <rect x="1800" y="360" width="120" height="120" fill="white"/>
+    
+    <rect x="0" y="480" width="120" height="120" fill="white"/>
+    <rect x="120" y="480" width="120" height="120" fill="black"/>
+    <rect x="240" y="480" width="120" height="120" fill="white"/>
+    <rect x="360" y="480" width="120" height="120" fill="black"/>
+    <rect x="480" y="480" width="120" height="120" fill="white"/>
+    <rect x="600" y="480" width="120" height="120" fill="black"/>
+    <rect x="720" y="480" width="120" height="120" fill="white"/>
+    <rect x="840" y="480" width="120" height="120" fill="black"/>
+    <rect x="960" y="480" width="120" height="120" fill="white"/>
+    <rect x="1080" y="480" width="120" height="120" fill="black"/>
+    <rect x="1200" y="480" width="120" height="120" fill="white"/>
+    <rect x="1320" y="480" width="120" height="120" fill="black"/>
+    <rect x="1440" y="480" width="120" height="120" fill="white"/>
+    <rect x="1560" y="480" width="120" height="120" fill="black"/>
+    <rect x="1680" y="480" width="120" height="120" fill="white"/>
+    <rect x="1800" y="480" width="120" height="120" fill="black"/>
+  </g>
+  
+  <!-- Merchandise Silhouette Icons -->
+  <g opacity="0.15" fill="white">
+    <!-- T-Shirt -->
+    <path d="M400 200C400 200 450 180 500 200L520 150H380L400 200Z"/>
+    <path d="M380 150H520V300H380V150Z"/>
+    
+    <!-- Cap -->
+    <path d="M650 200C650 177.909 667.909 160 690 160C712.091 160 730 177.909 730 200C730 222.091 712.091 240 690 240C667.909 240 650 222.091 650 200Z"/>
+    <path d="M650 200H730V220H650V200Z"/>
+    
+    <!-- Hoodie -->
+    <path d="M850 160H950V300H850V160Z"/>
+    <path d="M850 160C850 160 880 140 900 160C920 140 950 160 950 160L970 120H830L850 160Z"/>
+    <path d="M870 160V140H930V160H870Z"/>
+    
+    <!-- Water Bottle -->
+    <path d="M1050 160C1050 160 1060 150 1070 150C1080 150 1090 160 1090 160V280C1090 280 1080 290 1070 290C1060 290 1050 280 1050 280V160Z"/>
+    <path d="M1058 160H1082V170H1058V160Z"/>
+    
+    <!-- Backpack -->
+    <path d="M1200 160H1280V280H1200V160Z"/>
+    <path d="M1200 180H1190V260H1200V180Z"/>
+    <path d="M1280 180H1290V260H1280V180Z"/>
+    <path d="M1220 160H1260V140H1220V160Z"/>
+    
+    <!-- Umbrella -->
+    <path d="M1400 290V160L1380 180L1400 160L1420 180L1400 160L1440 180L1400 160L1360 180L1400 160Z"/>
+    <path d="M1395 290H1405V300H1395V290Z"/>
+  </g>
+  
+  <!-- Dynamic Circles -->
+  <circle cx="300" cy="400" r="20" fill="#DC2626" fill-opacity="0.6"/>
+  <circle cx="1600" cy="150" r="15" fill="#DC2626" fill-opacity="0.4"/>
+  <circle cx="950" cy="500" r="25" fill="#DC2626" fill-opacity="0.5"/>
+  <circle cx="500" cy="100" r="10" fill="#DC2626" fill-opacity="0.7"/>
+  <circle cx="1200" cy="450" r="18" fill="#DC2626" fill-opacity="0.6"/>
+  <circle cx="1500" cy="300" r="12" fill="#DC2626" fill-opacity="0.5"/>
+</svg> 

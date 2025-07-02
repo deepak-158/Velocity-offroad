@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="podium-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wall-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="confetti" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect x="10" y="10" width="5" height="5" fill="#0ea5e9" transform="rotate(30 12.5 12.5)" />
+      <rect x="30" y="20" width="5" height="5" fill="#f59e0b" transform="rotate(45 32.5 22.5)" />
+      <rect x="50" y="15" width="5" height="5" fill="#0ea5e9" transform="rotate(60 52.5 17.5)" />
+      <rect x="70" y="25" width="5" height="5" fill="#f59e0b" transform="rotate(120 72.5 27.5)" />
+      <rect x="20" y="50" width="5" height="5" fill="#0ea5e9" transform="rotate(10 22.5 52.5)" />
+      <rect x="40" y="60" width="5" height="5" fill="#f59e0b" transform="rotate(80 42.5 62.5)" />
+      <rect x="60" y="70" width="5" height="5" fill="#0ea5e9" transform="rotate(35 62.5 72.5)" />
+      <rect x="80" y="40" width="5" height="5" fill="#f59e0b" transform="rotate(55 82.5 42.5)" />
+    </pattern>
+  </defs>
+  
+  <!-- Background wall -->
+  <rect width="800" height="450" fill="url(#wall-gradient)" />
+  <rect width="800" height="450" fill="url(#confetti)" opacity="0.4" />
+  
+  <!-- Floor -->
+  <rect y="350" width="800" height="100" fill="#1f2937" />
+  
+  <!-- Podium -->
+  <g transform="translate(400, 350)">
+    <!-- Second place -->
+    <rect x="-180" y="-60" width="120" height="60" fill="url(#podium-gradient)" stroke="#d1d5db" stroke-width="2" />
+    <text x="-120" y="-20" font-family="Racing Sans One, sans-serif" font-size="24" text-anchor="middle" fill="#0c4a6e">2</text>
+    
+    <!-- First place -->
+    <rect x="-60" y="-100" width="120" height="100" fill="url(#podium-gradient)" stroke="#d1d5db" stroke-width="2" />
+    <text x="0" y="-20" font-family="Racing Sans One, sans-serif" font-size="24" text-anchor="middle" fill="#0c4a6e">1</text>
+    
+    <!-- Third place -->
+    <rect x="60" y="-40" width="120" height="40" fill="url(#podium-gradient)" stroke="#d1d5db" stroke-width="2" />
+    <text x="120" y="-20" font-family="Racing Sans One, sans-serif" font-size="24" text-anchor="middle" fill="#0c4a6e">3</text>
+  </g>
+  
+  <!-- Team members on podium -->
+  <!-- First place person -->
+  <g transform="translate(400, 220)">
+    <!-- Body -->
+    <rect x="-20" y="-45" width="40" height="75" rx="5" fill="#0ea5e9" />
+    <!-- Head -->
+    <circle cx="0" cy="-65" r="20" fill="#d1d5db" />
+    <!-- Arms raised -->
+    <path d="M-20,-30 L-50,-80" stroke="#0ea5e9" stroke-width="10" stroke-linecap="round" />
+    <path d="M20,-30 L50,-80" stroke="#0ea5e9" stroke-width="10" stroke-linecap="round" />
+    <!-- Trophy -->
+    <rect x="-10" y="-105" width="20" height="30" fill="#fcd34d" />
+    <path d="M-15,-105 L15,-105 L10,-115 L-10,-115 Z" fill="#fcd34d" />
+  </g>
+  
+  <!-- Second place person -->
+  <g transform="translate(280, 260)">
+    <!-- Body -->
+    <rect x="-17" y="-40" width="34" height="70" rx="5" fill="#0ea5e9" />
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="20" fill="#d1d5db" />
+    <!-- Arms -->
+    <path d="M-17,-25 L-40,-45" stroke="#0ea5e9" stroke-width="10" stroke-linecap="round" />
+    <path d="M17,-25 L35,-50" stroke="#0ea5e9" stroke-width="10" stroke-linecap="round" />
+  </g>
+  
+  <!-- Third place person -->
+  <g transform="translate(520, 280)">
+    <!-- Body -->
+    <rect x="-17" y="-40" width="34" height="70" rx="5" fill="#0ea5e9" />
+    <!-- Head -->
+    <circle cx="0" cy="-60" r="20" fill="#d1d5db" />
+    <!-- Arms -->
+    <path d="M-17,-25 L-30,-50" stroke="#0ea5e9" stroke-width="10" stroke-linecap="round" />
+    <path d="M17,-25 L40,-35" stroke="#0ea5e9" stroke-width="10" stroke-linecap="round" />
+  </g>
+  
+  <!-- Champagne spray -->
+  <g opacity="0.7">
+    <path d="M370,140 C320,100 300,80 280,40" stroke="#e0f2fe" stroke-width="3" fill="none" />
+    <path d="M350,150 C310,120 290,100 260,70" stroke="#e0f2fe" stroke-width="2" fill="none" />
+    <path d="M430,140 C480,100 500,80 520,40" stroke="#e0f2fe" stroke-width="3" fill="none" />
+    <path d="M450,150 C490,120 510,100 540,70" stroke="#e0f2fe" stroke-width="2" fill="none" />
+  </g>
+  
+  <!-- Celebration banner -->
+  <path d="M150,80 L650,80" stroke="#0ea5e9" stroke-width="3" />
+  <path d="M160,80 L180,120 L200,80 L220,120 L240,80 L260,120 L280,80 L300,120 L320,80 L340,120 L360,80 L380,120 L400,80 L420,120 L440,80 L460,120 L480,80 L500,120 L520,80 L540,120 L560,80 L580,120 L600,80 L620,120 L640,80" stroke="#f59e0b" stroke-width="2" fill="none" />
+  
+  <!-- Regional Finals text -->
+  <rect x="250" y="20" width="300" height="50" rx="5" fill="#0c4a6e" />
+  <text x="400" y="55" font-family="Racing Sans One, sans-serif" font-size="24" text-anchor="middle" fill="white">REGIONAL FINALS</text>
+  
+  <!-- Team members cheering -->
+  <!-- Team member 1 -->
+  <g transform="translate(150, 380)">
+    <!-- Body -->
+    <rect x="-15" y="-40" width="30" height="60" rx="5" fill="#0ea5e9" />
+    <!-- Head -->
+    <circle cx="0" cy="-55" r="15" fill="#d1d5db" />
+    <!-- Arms raised -->
+    <path d="M-15,-30 L-30,-70" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round" />
+    <path d="M15,-30 L30,-70" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round" />
+  </g>
+  
+  <!-- Team member 2 -->
+  <g transform="translate(650, 380)">
+    <!-- Body -->
+    <rect x="-15" y="-40" width="30" height="60" rx="5" fill="#0ea5e9" />
+    <!-- Head -->
+    <circle cx="0" cy="-55" r="15" fill="#d1d5db" />
+    <!-- Arms raised -->
+    <path d="M-15,-30 L-30,-70" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round" />
+    <path d="M15,-30 L30,-70" stroke="#0ea5e9" stroke-width="8" stroke-linecap="round" />
+  </g>
+</svg> 

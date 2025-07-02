@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 280" width="350" height="280">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="350" height="280" fill="url(#bgGradient)" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- Camera icon -->
+  <g transform="translate(175, 140)">
+    <!-- Camera body -->
+    <rect x="-40" y="-25" width="80" height="50" rx="8" fill="#6c757d" opacity="0.6"/>
+    <!-- Lens -->
+    <circle cx="0" cy="0" r="20" fill="#495057" opacity="0.7"/>
+    <circle cx="0" cy="0" r="12" fill="#343a40" opacity="0.8"/>
+    <!-- Flash -->
+    <rect x="-30" y="-35" width="15" height="8" rx="2" fill="#6c757d" opacity="0.5"/>
+    <!-- Viewfinder -->
+    <rect x="20" y="-35" width="12" height="8" rx="2" fill="#6c757d" opacity="0.5"/>
+  </g>
+  
+  <!-- Mountain/landscape silhouette -->
+  <path d="M0 220 L80 160 L120 180 L180 140 L240 170 L300 150 L350 180 L350 280 L0 280 Z" fill="#adb5bd" opacity="0.4"/>
+  
+  <!-- Gallery text -->
+  <text x="175" y="50" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" fill="#495057">GALLERY</text>
+  <text x="175" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">Photo Placeholder</text>
+</svg>
