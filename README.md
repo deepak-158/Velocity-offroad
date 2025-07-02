@@ -22,7 +22,7 @@ I created **Velocity Offroad** as an immersive way to demonstrate full-stack dev
 The racing theme provided the perfect backdrop to demonstrate technical excellence while creating something visually exciting and emotionally engaging. Just like in racing, web development requires precision, speed, innovation, and attention to detail. This project embodies those principles through clean code, optimized performance, and a user-centric design approach.
 
 ## 🌐 Live Demo
-**Portfolio Website:** [velocityoffroad.netlify.app](https://velocityoffroad.netlify.app/)
+**Website:** [velocityoffroad.netlify.app](https://velocityoffroad.netlify.app/)
 
 Experience the full project in action! The website demonstrates modern web development practices through an engaging racing team narrative, complete with dynamic content, interactive components, and responsive design that works seamlessly across all devices.
 
